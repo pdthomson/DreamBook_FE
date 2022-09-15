@@ -1,0 +1,9 @@
+<%= form_with url: '/users', method: :post, local: true do |f| %>
+  <%= f.label :user_name, 'username' %>
+  <%= f.text_field :user_name %>
+
+  <%= f.submit "Register" %>
+<% end %>
+
+<%  #since we will be using OAuth, there is no email or password
+ #information to collect- will need to update once we implement OAuth %>
