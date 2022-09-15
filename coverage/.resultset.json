@@ -7,7 +7,7 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/welcome_controller.rb": {
+      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/blogs_controller.rb": {
         "lines": [
           1,
           null,
@@ -19,6 +19,15 @@
       "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -87,6 +96,6 @@
         }
       }
     },
-    "timestamp": 1663199114
+    "timestamp": 1663201741
   }
 }
