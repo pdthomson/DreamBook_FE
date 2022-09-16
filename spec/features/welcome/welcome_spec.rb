@@ -44,11 +44,11 @@ RSpec.describe 'Welcome page' do
     expect(current_path).to eq(dashboard_path)
     visit root_path
     expect(page).to_not have_link('Log in')
-    expect(page).to_not have_button('Create a Dreamer')
+    expect(page).to_not have_link('Create a Dreamer')
     expect(page).to have_link('Log out')
     click_link 'Log out'
     expect(current_path).to eq(root_path)
     expect(page).to have_link('Log in')
-    expect(page).to have_button('Create a Dreamer')
+    expect(page).to have_link('Create a Dreamer')
   end
 end

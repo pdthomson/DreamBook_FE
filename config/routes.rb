@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  resources :users, only: [:index, :new]
-  resources :sessions, only: [:new]
+  resources :users
+  resources :sessions
   resources :blogs, only: [:index, :show, :new, :create]
   
   

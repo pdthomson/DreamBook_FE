@@ -23,7 +23,7 @@
           1,
           null,
           1,
-          5,
+          6,
           null,
           null
         ]
@@ -55,6 +55,10 @@
           1,
           1,
           null,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -70,6 +74,19 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -108,16 +125,6 @@
         "branches": {
         }
       },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/sessions_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
@@ -139,6 +146,6 @@
         }
       }
     },
-    "timestamp": 1663363442
+    "timestamp": 1663365254
   }
 }
