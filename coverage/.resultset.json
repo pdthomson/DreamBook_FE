@@ -7,6 +7,27 @@
           null
         ]
       },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/users_controller.rb": {
         "lines": [
           1,
@@ -19,20 +40,20 @@
           null,
           1,
           1,
-          1,
-          1,
-          null,
           0,
-          null,
-          null,
+          0,
           null,
           1,
-          0,
-          0,
           null,
           null,
-          0,
-          0,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           1,
@@ -41,47 +62,22 @@
           null
         ]
       },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/application_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/user.rb": {
         "lines": [
           1,
-          null,
           1,
-          null,
           1,
-          2,
-          null,
           null
         ]
       },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/welcome_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/application_record.rb": {
         "lines": [
           1,
-          null,
           1,
-          null,
           null
         ]
       },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/user.rb": {
         "lines": [
           0,
           0,
@@ -152,6 +148,6 @@
         }
       }
     },
-    "timestamp": 1663366272
+    "timestamp": 1663366508
   }
 }

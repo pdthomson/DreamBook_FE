@@ -1,2 +1,6 @@
 <h1>Dreamer Dashboard</h1>
 <p>Dreamer: <%=  @user.username  %> </p>
+<%= link_to 'Home', root_path %> |
+<% if current_user %>
+    <%= link_to 'Log out', session_path(current_user.id), method: :delete %>
+<% end %>

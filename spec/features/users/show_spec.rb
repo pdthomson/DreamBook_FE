@@ -17,7 +17,9 @@ RSpec.describe 'User Show Page' do
   end
 
   it 'If user is logged in page has a link to log out and home page' do
-    visit dashboard_path
+    visit root_path
+    click_on 'Log in/Register'
+    expect(current_path).to eq(dashboard_path)
     expect(page).to have_link('Home')
     expect(page).to have_link('Log out')
   end
