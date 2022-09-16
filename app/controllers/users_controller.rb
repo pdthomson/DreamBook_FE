@@ -16,11 +16,11 @@ class UsersController < ApplicationController
   end
 
   def create 
-    user = User.find_or_create_by(email: request.env['omniauth.auth'][:info][:email],
-                                  username: request.env['omniauth.auth'][:info][:first_name],  
-                                  uid: request.env['omniauth.auth'][:uid])
-    session[:uid] = request.env['omniauth.auth'][:uid]
-                                  # binding.pry
+    auth_hash = request.env['omniauth.auth']
+    user = User.find_or_create_by(email: auth_hash[:info][:email],
+                                  username: auth_hash[:info][:first_name],
+                                  uid: auth_hash[:uid])
+    session[:uid] = auth_hash[:uid]
     redirect_to '/dashboard'
   end
 end
