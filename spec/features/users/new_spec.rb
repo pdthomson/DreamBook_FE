@@ -9,9 +9,9 @@ RSpec.describe 'Create New User' do
 # When I click Create A Dreamer,
 # I am redirected to '/user/new'
 # And see a form to enter information
-# (A dreamer will need name, email--authentication will be through OAuth)
+# (A dreamer will need username, email--authentication will be through OAuth)
 
-  it 'has a form to create a new user' do
+  xit 'has a form to create a new user' do
     visit root_path
 
     expect(page).to have_link('Create a Dreamer')
