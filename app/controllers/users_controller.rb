@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   def new
   end
 
-  def index 
+  def index
   end
 
   def show
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def create 
+  def create
     auth_hash = request.env['omniauth.auth']
     user = User.find_or_create_by(email: auth_hash[:info][:email],
                                   username: auth_hash[:info][:first_name],
@@ -25,6 +25,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    binding.pry
+    User.find(params[:id]).destroy
+    redirect_to root_path
   end
 end
