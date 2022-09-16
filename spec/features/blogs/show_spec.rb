@@ -1,24 +1,34 @@
 require 'rails_helper'
 
 RSpec.describe 'Blogs Show' do
-  xit 'it can redirect you to home' do
-    visit blog_path
+  before(:each) do
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:google_oauth2] =
+    OmniAuth::AuthHash.new({:provider => 'google',
+                            :uid => '123545',
+                            :info => {
+                              :email => 'email@gmail.com',
+                              :first_name => 'Smudger'
+                            },
+                            :credentials => {
+                              :token => '222'
+                            }
+                          })
+  end
+  it 'it can redirect you to home' do
+    visit blogs_path
     expect(page).to have_link('Home')
     click_on 'Home'
     expect(current_path).to eq(root_path)
   end
 
-  xit 'has a link to log out' do
-    visit blogs_path
-    expect(page).to have_link('Logout')
-    click_on 'Logout'
-    # expect(current_path).to eq('Home')
-  end
+  it 'has a link to the dashboard' do
+    visit root_path
+    click_on 'Log in'
 
-  xit 'has a link to the dashboard' do
     visit blogs_path
     expect(page).to have_link('Dashboard')
     click_on 'Dashboard'
-    # expect(current_path).to eq(dashboard_path)
+    expect(current_path).to eq(dashboard_path)
   end
 end
