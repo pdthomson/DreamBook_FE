@@ -41,9 +41,7 @@ RSpec.describe 'Welcome page' do
     visit root_path
     expect(page).to have_link('Log in')
     click_link 'Log in'
-    expect(current_path).to be dashboard_path
-
-
+    expect(current_path).to eq(dashboard_path)
     visit root_path
     expect(page).to_not have_link('Log in')
     expect(page).to_not have_button('Create a Dreamer')
