@@ -23,4 +23,8 @@ class UsersController < ApplicationController
     session[:uid] = auth_hash[:uid]
     redirect_to '/dashboard'
   end
+
+  def destroy
+    binding.pry
+  end
 end
