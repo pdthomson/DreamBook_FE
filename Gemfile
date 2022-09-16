@@ -16,10 +16,10 @@ gem 'faraday'
 gem 'figaro'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'orderly'
   gem 'rspec-rails'
