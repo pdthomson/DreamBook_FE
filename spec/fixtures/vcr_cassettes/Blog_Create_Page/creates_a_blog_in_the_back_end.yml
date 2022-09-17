@@ -1,0 +1,577 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"754392fc18a22850db4c0147ee4f0fea"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9008924a-bda2-4921-8fc8-f032e1edaf18
+      X-Runtime:
+      - '0.002932'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:30:37 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"754392fc18a22850db4c0147ee4f0fea"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8949e5b8-f2d7-4e4d-a2ce-2aa36466dafc
+      X-Runtime:
+      - '0.004053'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:31:24 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"754392fc18a22850db4c0147ee4f0fea"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 691fdf8a-fa71-4464-a5ed-9e5015272ab4
+      X-Runtime:
+      - '0.002987'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:32:02 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4ca2c54b2a15cae33fd599cfb1a55134"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 274644d2-6f53-4c54-9b3a-8466a4573fc2
+      X-Runtime:
+      - '0.002771'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:32:02 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4ca2c54b2a15cae33fd599cfb1a55134"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 34be457d-589a-41f4-a4b3-f4fab165ae69
+      X-Runtime:
+      - '0.002792'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:32:19 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1c6a5c0a148a65a5f13484a9dca53c06"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 549c07fa-d043-4fa4-aab1-72c03ffb8b58
+      X-Runtime:
+      - '0.002903'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}},{"id":"20","type":"blog","attributes":{"title":"Mother
+        Night","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":99}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:32:19 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1c6a5c0a148a65a5f13484a9dca53c06"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9889e011-ce4c-401b-a34f-313a7a8dbd81
+      X-Runtime:
+      - '0.003093'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}},{"id":"20","type":"blog","attributes":{"title":"Mother
+        Night","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":99}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:33:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fd194ace4fd521e5cb136eee7b4ad02e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5f4532eb-2203-4fc3-a015-ec1aeb3f6029
+      X-Runtime:
+      - '0.003597'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}},{"id":"20","type":"blog","attributes":{"title":"Mother
+        Night","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":99}},{"id":"21","type":"blog","attributes":{"title":"Far
+        From the Madding Crowd","body":"I sit beside the fire and think","status":"shared","user_id":100}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:33:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fd194ace4fd521e5cb136eee7b4ad02e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7b9e36d-37f3-49f4-bbba-1e2a32aef9f2
+      X-Runtime:
+      - '0.004228'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}},{"id":"20","type":"blog","attributes":{"title":"Mother
+        Night","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":99}},{"id":"21","type":"blog","attributes":{"title":"Far
+        From the Madding Crowd","body":"I sit beside the fire and think","status":"shared","user_id":100}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:33:14 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: UTF-8
+      string: '{"title":"Fear and Trembling","body":"Hop along, my little friends,
+        up the Withywindle!","user_id":"101","status":"shared"}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ddf52426caadee013279fda43c11b438"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 74ed61bd-f65e-4d08-975f-35a53fa65423
+      X-Runtime:
+      - '0.003749'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"22","type":"blog","attributes":{"title":"Fear and Trembling","body":"Hop
+        along, my little friends, up the Withywindle!","status":"shared","user_id":101}}}'
+  recorded_at: Sat, 17 Sep 2022 23:33:14 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c73102227d9e5e5f032db72659bfda56"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f884295-fa1b-4c27-afcc-6144827ceff4
+      X-Runtime:
+      - '0.002994'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Rosemary
+        Sutcliff","body":"Seek for the Sword that was broken","status":"shared","user_id":75}},{"id":"5","type":"blog","attributes":{"title":"To
+        a God Unknown","body":"Fifteen birds in five fir trees","status":"shared","user_id":76}},{"id":"6","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Long live the Halflings! Praise them with great praise!","status":"shared","user_id":77}},{"id":"7","type":"blog","attributes":{"title":"The
+        Wings of the Dove","body":"The Road Goes Ever On and On","status":"shared","user_id":78}},{"id":"8","type":"blog","attributes":{"title":"Such,
+        Such Were the Joys","body":"Where now the horse and the rider?","status":"shared","user_id":79}},{"id":"9","type":"blog","attributes":{"title":"The
+        Millstone","body":"Far over the misty mountains cold","status":"shared","user_id":80}},{"id":"10","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The Fall of Gil-galad","status":"shared","user_id":81}},{"id":"11","type":"blog","attributes":{"title":"Beneath
+        the Bleeding","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":85}},{"id":"12","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"In western lands beneath the Sun","status":"shared","user_id":88}},{"id":"13","type":"blog","attributes":{"title":"Tiger!
+        Tiger!","body":"The Road Goes Ever On and On","status":"shared","user_id":90}},{"id":"14","type":"blog","attributes":{"title":"After
+        Many a Summer Dies the Swan","body":"Old fat spider spinning in a tree!","status":"shared","user_id":91}},{"id":"15","type":"blog","attributes":{"title":"Ego
+        Dominus Tuus","body":"The world was young, the mountains green","status":"shared","user_id":93}},{"id":"16","type":"blog","attributes":{"title":"The
+        Sun Also Rises","body":"The cold hard lands","status":"shared","user_id":94}},{"id":"17","type":"blog","attributes":{"title":"Waiting
+        for the Barbarians","body":"The cold hard lands","status":"shared","user_id":95}},{"id":"18","type":"blog","attributes":{"title":"Blood''s
+        a Rover","body":"In western lands beneath the Sun","status":"shared","user_id":96}},{"id":"19","type":"blog","attributes":{"title":"Tender
+        Is the Night","body":"Arise, arise, Riders of Theoden!","status":"shared","user_id":98}},{"id":"20","type":"blog","attributes":{"title":"Mother
+        Night","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":99}},{"id":"21","type":"blog","attributes":{"title":"Far
+        From the Madding Crowd","body":"I sit beside the fire and think","status":"shared","user_id":100}},{"id":"22","type":"blog","attributes":{"title":"Fear
+        and Trembling","body":"Hop along, my little friends, up the Withywindle!","status":"shared","user_id":101}}]}'
+  recorded_at: Sat, 17 Sep 2022 23:33:14 GMT
+recorded_with: VCR 6.1.0

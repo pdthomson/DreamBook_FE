@@ -2,10 +2,11 @@ class Blog
   attr_reader :title,
               :body,
               :status,
-              :user_id
+              :user_id,
+              :id
 
   def initialize(data)
-    # binding.pry
+    @id = data[:id].to_i
     @title = data[:attributes][:title]
     @body = data[:attributes][:body]
     @status = data[:attributes][:status]

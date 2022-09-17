@@ -23,7 +23,7 @@ RSpec.describe "Blog Create Page" do
     title = Faker::Book.title 
     fill_in :title, with: title
     fill_in :body, with: Faker::Fantasy::Tolkien.poem
-    select "Public", :from => "status"
+    select "shared", :from => "status"
     click_on 'Submit'
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_link(title)

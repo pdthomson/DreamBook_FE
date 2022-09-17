@@ -14,5 +14,17 @@ class BlogService
       response = conn.get('blogs')
       json_response(response)
     end
+
+    def send_blog(blog_params)
+      response = conn.post('blogs', {
+        title: blog_params[:title],
+        body: blog_params[:body],
+        user_id: blog_params[:user_id],
+        status: blog_params[:status]
+      }.to_json, "Content-Type" => "application/json")
+      
+      json_response(response)
+      
+    end
   end
 end
