@@ -22,7 +22,7 @@ RSpec.describe 'Blogs Show' do
     expect(current_path).to eq(root_path)
   end
 
-  it 'has a link to the dashboard' do
+  it 'has a link to the dashboard', :vcr do
     visit root_path
     click_on 'Log in'
 
