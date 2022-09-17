@@ -1,0 +1,16 @@
+<div class="bg-secondary text-white">
+  <div class="container text-right">
+    <%= link_to 'Home', root_path %> |
+    <% if current_user %>
+      <%= link_to 'Log out', session_path(current_user.id), method: :delete %>
+      <%= link_to 'Blogs', blogs_path, method: :get %>
+      <%= link_to 'Dashboard', dashboard_path, method: :get %> 
+    <% else %>
+      <%= link_to 'Log in/Register', '/auth/google_oauth2' %>
+    <% end %>
+  </div>
+  <div class="container text-center">
+    <h2>Welcome to DreamBook</h2>
+    <p class="text-primary"></p>
+  </div>
+</div>

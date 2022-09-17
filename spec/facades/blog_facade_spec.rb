@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe BlogFacade do 
+RSpec.describe BlogFacade do 
   it 'returns an array of blog objects', :vcr do 
     blog_objects = BlogFacade.all_blogs
 

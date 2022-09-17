@@ -5,9 +5,10 @@ class Blog
               :user_id
 
   def initialize(data)
-    @title = data[:data][:attributes][:title]
-    @body = data[:data][:attributes][:body]
-    @status = data[:data][:attributes][:status]
-    @user_id = data[:data][:attributes][:user_id]
+    # binding.pry
+    @title = data[:attributes][:title]
+    @body = data[:attributes][:body]
+    @status = data[:attributes][:status]
+    @user_id = data[:attributes][:user_id]
   end
 end
