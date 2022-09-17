@@ -23,6 +23,21 @@
           null
         ]
       },
+      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/facades/comment_facade.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/models/user.rb": {
         "lines": [
           1,
@@ -63,9 +78,9 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -98,7 +113,7 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null,
           1,
@@ -106,9 +121,8 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           null
@@ -260,6 +274,6 @@
         }
       }
     },
-    "timestamp": 1663448962
+    "timestamp": 1663449298
   }
 }

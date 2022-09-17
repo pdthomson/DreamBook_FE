@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 941fdb83-da29-4ef2-ae76-1cd1d22ee85c
+      - fe3c8e28-ed44-4c75-a6e1-c2ae54200058
       X-Runtime:
-      - '0.002038'
+      - '0.004774'
       Transfer-Encoding:
       - chunked
     body:
@@ -36,5 +36,5 @@ http_interactions:
         code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
         cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
         Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}}]}'
-  recorded_at: Sat, 17 Sep 2022 21:08:17 GMT
+  recorded_at: Sat, 17 Sep 2022 21:14:58 GMT
 recorded_with: VCR 6.1.0

@@ -12,7 +12,6 @@ class CommentService
     def get_all_comments(blog_id)
       response = conn.get("blogs/#{blog_id}/comments")
       json_response(response)
-      binding.pry
     end
   end
 end
