@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user_blogs = BlogFacade.user_blogs(current_user.id)
     if current_user.nil?
       redirect_to root_path
       flash[:notice] = "You must login or register to visit your dashboard."

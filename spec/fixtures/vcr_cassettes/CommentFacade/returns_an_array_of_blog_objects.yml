@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2105fd41-81d7-4825-8f7e-3eb6cbbd2dbc
+      - 1d1930c1-8694-48a7-be5f-4147eec86e9f
       X-Runtime:
-      - '0.005656'
+      - '0.002246'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,5 +35,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"comment","attributes":{"user_id":2,"blog_id":1,"comment_text":"sounds
         like a nighmare!"}},{"id":"2","type":"comment","attributes":{"user_id":3,"blog_id":1,"comment_text":"thats
         happened to me too!"}}]}'
-  recorded_at: Sat, 17 Sep 2022 21:14:57 GMT
+  recorded_at: Sat, 17 Sep 2022 23:53:48 GMT
 recorded_with: VCR 6.1.0

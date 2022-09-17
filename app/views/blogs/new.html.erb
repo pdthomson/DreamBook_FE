@@ -1,0 +1,14 @@
+<h1>Share Your Dream!</h1>
+<%= form_with url: "/blogs", method: :post, local: true do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :body%>:
+  <%= f.text_field :body %>
+  <br>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <br>
+  <%= f.select :status, ['hidden', 'shared']%>
+  <br>
+  <%= f.button 'Submit' %>
+<% end %>
