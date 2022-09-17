@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe Blogs do 
+RSpec.describe Blog do 
 
   it 'exists and has attributes' do 
     data = {
         data:
-        {
+       [{
             id: 1,
             type: "blog",
             attributes: {
@@ -14,7 +14,7 @@ RSpec.describe Blogs do
               status: 0,
               user_id: 123
               }
-          }
+          }]
       }
 
       blog = Blog.new(data)
