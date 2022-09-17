@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Welcome page' do
   before(:each) do
     OmniAuth.config.test_mode = true
-    OmniAuth.config.mock_auth[:google_oauth2] = 
+    OmniAuth.config.mock_auth[:google_oauth2] =
     OmniAuth::AuthHash.new({:provider => 'google',
                             :uid => '123545',
                             :info => {
@@ -41,6 +41,15 @@ RSpec.describe 'Welcome page' do
     click_link 'Log out'
     expect(current_path).to eq(root_path)
     expect(page).to have_link('Log in/Register')
+  end
 
+  it 'has a link to the user dashboard' do
+    visit root_path
+    expect(page).to have_link('Log in/Register')
+    click_link 'Log in/Register'
+    click_link 'Home'
+    expect(page).to have_link('Dashboard')
+    click_on 'Dashboard'
+    expect(current_path).to eq(dashboard_path)
   end
 end

@@ -24,8 +24,30 @@ class UsersController < ApplicationController
     redirect_to '/dashboard'
   end
 
+  def edit
+  end
+
+  def update
+    @user = current_user
+    current_user.update(user_params)
+    if @user.save
+      redirect_to dashboard_path
+      flash[:alert] = "Your username has successfully been updated."
+    else
+      redirect_to '/dashboard/update'
+      flash[:alert] = "This username already exists"
+    end
+  end
+
   def destroy
     User.find(params[:id]).destroy
     redirect_to root_path
+    flash[:alert] = 'Account successfully deleted'
+  end
+
+  private
+
+  def user_params
+    params.permit(:username)
   end
 end

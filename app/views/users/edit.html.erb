@@ -1,0 +1,8 @@
+<h2>Change Username</h2>
+<br>
+
+<%= form_with url: dashboard_path, method: :patch, local: true do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit :Update %>
+<% end %>
