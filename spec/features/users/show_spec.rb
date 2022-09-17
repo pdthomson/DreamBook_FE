@@ -34,4 +34,16 @@ RSpec.describe 'User Show Page' do
     expect(User.count).to eq(0)
     expect(current_path).to eq(root_path)
   end
+
+  it 'can update a username' do
+    visit root_path
+    click_on 'Log in/Register'
+    expect(current_path).to eq(dashboard_path)
+    expect(page).to have_link('Change Username')
+    click_link 'Change Username'
+    expect(current_path).to eq('/dashboard/update')
+    fill_in :username, with: 'Tee'
+    click_on 'Update'
+    expect(current_path).to eq('/dashboard')
+  end
 end

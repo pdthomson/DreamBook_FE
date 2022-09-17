@@ -24,8 +24,25 @@ class UsersController < ApplicationController
     redirect_to '/dashboard'
   end
 
+  def edit
+  end
+
+  def update
+    @user = current_user
+    current_user.update(user_params)
+    redirect_to dashboard_path
+    flash[:alert] = "Your username is now #{@user.username}" 
+  end
+
   def destroy
     User.find(params[:id]).destroy
     redirect_to root_path
+    flash[:alert] = 'Account successfully deleted'
+  end
+
+  private
+
+  def user_params
+    params.permit(:username)
   end
 end

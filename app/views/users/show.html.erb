@@ -4,4 +4,5 @@
 <% if current_user %>
     <%= link_to 'Log out', session_path(current_user.id), method: :delete %>
     <%= link_to 'Delete Account', user_path(current_user.id), method: :delete %>
+    <%= link_to 'Change Username', '/dashboard/update' %>
 <% end %>
