@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/blogs
+    uri: http://localhost:5000/api/v1/blogs/1/comments
     body:
       encoding: US-ASCII
       string: ''
@@ -21,20 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"23d31b8f45ed7d91dc4a566617a425c3"
+      - W/"398cd52f9860227a16dfd0614aa4e440"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 941fdb83-da29-4ef2-ae76-1cd1d22ee85c
+      - 7da7899a-ef0d-4aa0-b8be-213e03e89138
       X-Runtime:
-      - '0.002038'
+      - '0.003594'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
-        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
-        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
-        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}}]}'
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"user_id":2,"blog_id":1,"comment_text":"sounds
+        like a nighmare!"}},{"id":"2","type":"comment","attributes":{"user_id":3,"blog_id":1,"comment_text":"thats
+        happened to me too!"}}]}'
   recorded_at: Sat, 17 Sep 2022 21:08:17 GMT
 recorded_with: VCR 6.1.0

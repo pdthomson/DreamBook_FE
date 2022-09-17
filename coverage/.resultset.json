@@ -92,6 +92,28 @@
           null
         ]
       },
+      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/services/comment_service.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/blogs_controller.rb": {
         "lines": [
           1,
@@ -238,6 +260,6 @@
         }
       }
     },
-    "timestamp": 1663448367
+    "timestamp": 1663448962
   }
 }
