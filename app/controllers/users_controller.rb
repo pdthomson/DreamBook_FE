@@ -30,8 +30,13 @@ class UsersController < ApplicationController
   def update
     @user = current_user
     current_user.update(user_params)
-    redirect_to dashboard_path
-    flash[:alert] = "Your username is now #{@user.username}" 
+    if @user.save
+      redirect_to dashboard_path
+      flash[:alert] = "Your username has successfully been updated."
+    else
+      redirect_to '/dashboard/update'
+      flash[:alert] = "This username already exists"
+    end
   end
 
   def destroy
