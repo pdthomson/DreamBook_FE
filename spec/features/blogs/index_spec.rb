@@ -21,4 +21,10 @@ RSpec.describe 'Blogs page' do
     click_on 'Dashboard'
     # expect(current_path).to eq(dashboard_path)
   end
+
+  # it 'can list the top 10 blogs', :vcr do 
+  #   visit blogs_path
+  #   expect(page).to 
+  # end
+  #need more seeds and info to complete test
 end

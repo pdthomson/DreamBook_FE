@@ -1,13 +1,29 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/helpers/application_helper.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/models/user.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/facades/blog_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -15,19 +31,59 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/models/application_record.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/blogs_controller.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/poros/blog.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/services/blog_service.rb": {
         "lines": [
           1,
           null,
           1,
-          6,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/controllers/blogs_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          5,
           null,
           null,
           1,
@@ -38,98 +94,85 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/application_controller.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
-          82,
-          null,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/welcome_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          12,
-          1,
-          1,
-          null,
           11,
           null,
-          null,
-          null,
-          1,
-          8,
-          8,
-          null,
-          null,
-          8,
-          8,
-          null,
-          null,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/controllers/welcome_controller.rb": {
+        "lines": [
           1,
           null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
           1,
           null,
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/controllers/sessions_controller.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/controllers/users_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
           1,
           null,
           null,
           1,
           1,
+          null,
+          null,
           1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
           null,
           null
         ]
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/mailers/application_mailer.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -139,7 +182,7 @@
         "branches": {
         }
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/jobs/application_job.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/jobs/application_job.rb": {
         "lines": [
           0,
           0
@@ -147,7 +190,22 @@
         "branches": {
         }
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/channels/application_cable/connection.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/controllers/sessions_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -157,7 +215,7 @@
         "branches": {
         }
       },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/channels/application_cable/channel.rb": {
+      "/Users/gwendolynruiz/turing/3module/Dreambook/DreamBook_FE/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -168,6 +226,6 @@
         }
       }
     },
-    "timestamp": 1663373326
+    "timestamp": 1663446600
   }
 }
