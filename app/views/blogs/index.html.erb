@@ -9,3 +9,6 @@
     <p class="text-primary"></p>
   </div>
 </div>
+<% @blogs.each do |blog| %>
+  <%= link_to blog.title, blog_path(blog.id) %>
+<% end %>

@@ -25,15 +25,52 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2c9517c5-e66b-43a5-b0c3-c8594599ddba
+      - 300b42d0-7cb4-486a-9b8c-5a8fcd300b04
       X-Runtime:
-      - '0.002166'
+      - '0.002167'
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJkYXRhIjpbeyJpZCI6IjEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRmx5aW5nIGNhdHMiLCJib2R5IjoiYSBkcmVhbSB3aGVyZSBjYXRzIHdlcmUgZmx5aW5nIiwic3RhdHVzIjoiaGlkZGVuIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRXhvdGljIENvbG9ycyIsImJvZHkiOiJhbGwgb2YgbXkgZHJlYW1zIGhhdmUgdmlicmFudCBjb2xvcnMiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyfX0seyJpZCI6IjQiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTWVybWFpZHMgU2luZ2luZyIsImJvZHkiOiJPdmVyIHRoZSBsYW5kIHRoZXJlIGxpZXMgYSBsb25nIHNoYWRvdyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIxNH19LHsiaWQiOiI1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIE1vb24gYnkgTmlnaHQiLCJib2R5IjoiVGhyb3VnaCBSb2hhbiBPdmVyIEZlbiBhbmQgRmllbGQgV2hlcmUgdGhlIExvbmcgR3Jhc3MgR3Jvd3MiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyMjZ9fSx7ImlkIjoiNiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkNvbnNpZGVyIFBobGViYXMiLCJib2R5IjoiU2VlayBmb3IgdGhlIFN3b3JkIHRoYXQgd2FzIGJyb2tlbiIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI0MH19LHsiaWQiOiI3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiT2ghIFRvIGJlIGluIEVuZ2xhbmQiLCJib2R5IjoiRmlmdGVlbiBiaXJkcyBpbiBmaXZlIGZpciB0cmVlcyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI1NH19LHsiaWQiOiI4IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIEhlYXJ0IElzIERlY2VpdGZ1bCBBYm92ZSBBbGwgVGhpbmdzIiwiYm9keSI6IlRoZSBNYW4gaW4gdGhlIE1vb24gU3RheWVkIFVwIFRvbyBMYXRlIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjY4fX0seyJpZCI6IjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgV29ybGQsIHRoZSBGbGVzaCBhbmQgdGhlIERldmlsIiwiYm9keSI6IkdvbmRvciEgR29uZG9yLCBiZXR3ZWVuIHRoZSBNb3VudGFpbnMgYW5kIHRoZSBTZWEhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjgyfX0seyJpZCI6IjEwIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiSSBTaW5nIHRoZSBCb2R5IEVsZWN0cmljIiwiYm9keSI6IkXDpHJlbmRpbCB3YXMgYSBtYXJpbmVyIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6Mjk2fX1dfQ==
+  recorded_at: Sun, 18 Sep 2022 02:18:41 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: UTF-8
+      string: '{"title":"Test","body":"This is a test","user_id":"303","status":"shared"}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9c05c2f84faf7dd7b01b7a776680c6b8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cf04bacd-bb42-4562-86d1-abb70dd71666
+      X-Runtime:
+      - '0.003344'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"11","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":303}}}'
   recorded_at: Sun, 18 Sep 2022 02:18:41 GMT
 - request:
     method: get
@@ -56,18 +93,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"25149cd2db182017d01d0b05e5921933"
+      - W/"6475efc544e9ff904620815c26d3f7cd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3eb88376-227f-4286-ae22-7cf2236d2c1a
+      - 7113ed6e-87fb-4430-8434-09a7e35ddb29
       X-Runtime:
-      - '0.002105'
+      - '0.002552'
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRmx5aW5nIGNhdHMiLCJib2R5IjoiYSBkcmVhbSB3aGVyZSBjYXRzIHdlcmUgZmx5aW5nIiwic3RhdHVzIjoiaGlkZGVuIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRXhvdGljIENvbG9ycyIsImJvZHkiOiJhbGwgb2YgbXkgZHJlYW1zIGhhdmUgdmlicmFudCBjb2xvcnMiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyfX0seyJpZCI6IjQiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTWVybWFpZHMgU2luZ2luZyIsImJvZHkiOiJPdmVyIHRoZSBsYW5kIHRoZXJlIGxpZXMgYSBsb25nIHNoYWRvdyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIxNH19LHsiaWQiOiI1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIE1vb24gYnkgTmlnaHQiLCJib2R5IjoiVGhyb3VnaCBSb2hhbiBPdmVyIEZlbiBhbmQgRmllbGQgV2hlcmUgdGhlIExvbmcgR3Jhc3MgR3Jvd3MiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyMjZ9fSx7ImlkIjoiNiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkNvbnNpZGVyIFBobGViYXMiLCJib2R5IjoiU2VlayBmb3IgdGhlIFN3b3JkIHRoYXQgd2FzIGJyb2tlbiIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI0MH19LHsiaWQiOiI3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiT2ghIFRvIGJlIGluIEVuZ2xhbmQiLCJib2R5IjoiRmlmdGVlbiBiaXJkcyBpbiBmaXZlIGZpciB0cmVlcyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI1NH19LHsiaWQiOiI4IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIEhlYXJ0IElzIERlY2VpdGZ1bCBBYm92ZSBBbGwgVGhpbmdzIiwiYm9keSI6IlRoZSBNYW4gaW4gdGhlIE1vb24gU3RheWVkIFVwIFRvbyBMYXRlIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjY4fX0seyJpZCI6IjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgV29ybGQsIHRoZSBGbGVzaCBhbmQgdGhlIERldmlsIiwiYm9keSI6IkdvbmRvciEgR29uZG9yLCBiZXR3ZWVuIHRoZSBNb3VudGFpbnMgYW5kIHRoZSBTZWEhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjgyfX0seyJpZCI6IjEwIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiSSBTaW5nIHRoZSBCb2R5IEVsZWN0cmljIiwiYm9keSI6IkXDpHJlbmRpbCB3YXMgYSBtYXJpbmVyIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6Mjk2fX1dfQ==
+        eyJkYXRhIjpbeyJpZCI6IjEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRmx5aW5nIGNhdHMiLCJib2R5IjoiYSBkcmVhbSB3aGVyZSBjYXRzIHdlcmUgZmx5aW5nIiwic3RhdHVzIjoiaGlkZGVuIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRXhvdGljIENvbG9ycyIsImJvZHkiOiJhbGwgb2YgbXkgZHJlYW1zIGhhdmUgdmlicmFudCBjb2xvcnMiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyfX0seyJpZCI6IjQiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTWVybWFpZHMgU2luZ2luZyIsImJvZHkiOiJPdmVyIHRoZSBsYW5kIHRoZXJlIGxpZXMgYSBsb25nIHNoYWRvdyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIxNH19LHsiaWQiOiI1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIE1vb24gYnkgTmlnaHQiLCJib2R5IjoiVGhyb3VnaCBSb2hhbiBPdmVyIEZlbiBhbmQgRmllbGQgV2hlcmUgdGhlIExvbmcgR3Jhc3MgR3Jvd3MiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyMjZ9fSx7ImlkIjoiNiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkNvbnNpZGVyIFBobGViYXMiLCJib2R5IjoiU2VlayBmb3IgdGhlIFN3b3JkIHRoYXQgd2FzIGJyb2tlbiIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI0MH19LHsiaWQiOiI3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiT2ghIFRvIGJlIGluIEVuZ2xhbmQiLCJib2R5IjoiRmlmdGVlbiBiaXJkcyBpbiBmaXZlIGZpciB0cmVlcyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI1NH19LHsiaWQiOiI4IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIEhlYXJ0IElzIERlY2VpdGZ1bCBBYm92ZSBBbGwgVGhpbmdzIiwiYm9keSI6IlRoZSBNYW4gaW4gdGhlIE1vb24gU3RheWVkIFVwIFRvbyBMYXRlIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjY4fX0seyJpZCI6IjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgV29ybGQsIHRoZSBGbGVzaCBhbmQgdGhlIERldmlsIiwiYm9keSI6IkdvbmRvciEgR29uZG9yLCBiZXR3ZWVuIHRoZSBNb3VudGFpbnMgYW5kIHRoZSBTZWEhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjgyfX0seyJpZCI6IjEwIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiSSBTaW5nIHRoZSBCb2R5IEVsZWN0cmljIiwiYm9keSI6IkXDpHJlbmRpbCB3YXMgYSBtYXJpbmVyIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6Mjk2fX0seyJpZCI6IjExIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjMwM319XX0=
   recorded_at: Sun, 18 Sep 2022 02:18:41 GMT
 recorded_with: VCR 6.1.0
