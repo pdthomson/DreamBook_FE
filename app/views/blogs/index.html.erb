@@ -9,3 +9,10 @@
     <p class="text-primary"></p>
   </div>
 </div>
+<% @blogs.each do |blog| %>
+<% if blog.status == 'shared' %>
+<%= link_to blog.title, blog_path(blog.id) %>
+<%= button_to 'Comment', "/blogs/#{blog.id}/comments/new", method: :get %>
+<% else %>
+<% end %>
+<% end %>
