@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/faker-ruby/faker.git
-  revision: 7507876893aaeb4917ca47e7ef58273bdaa6288d
+  revision: a4b077f0902df0d553c9dd192867f5379492cd5b
   branch: master
   specs:
     faker (2.23.0)
@@ -164,7 +164,7 @@ GEM
       capybara (>= 1.1)
       rspec (>= 2.14)
     pg (1.4.3)
-    popper_js (1.16.0)
+    popper_js (1.16.1)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -266,7 +266,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     vcr (6.1.0)
-    version_gem (1.1.0)
+    version_gem (1.1.1)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)

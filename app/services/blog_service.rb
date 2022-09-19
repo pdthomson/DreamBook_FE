@@ -2,8 +2,8 @@ class BlogService
 
   class << self
 
-    def conn
-      Faraday.new(url: "http://localhost:5000/api/v1/")
+    def conn 
+      Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
     end
 
     def json_response(response)
@@ -11,7 +11,7 @@ class BlogService
     end
 
     def get_all_blogs
-      response = conn.get('blogs')
+      response = conn.get('/api/v1/blogs')
       json_response(response)
     end
 
