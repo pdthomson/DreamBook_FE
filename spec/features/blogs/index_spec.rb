@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'Blogs page' do
-  it 'it can redirect you to home' do
+  it 'it can redirect you to home', :vcr do
     visit blogs_path
     expect(page).to have_link('Home')
     click_on 'Home'
     expect(current_path).to eq(root_path)
   end
 
-  it 'has a link to log out' do
+  it 'has a link to log out', :vcr do
     visit blogs_path
     expect(page).to have_link('Logout')
     click_on 'Logout'
@@ -23,9 +23,9 @@ RSpec.describe 'Blogs page' do
     expect(current_path).to eq(dashboard_path)
   end
 
-  # it 'can list the top 10 blogs', :vcr do 
+  # it 'can list the top 10 blogs', :vcr do
   #   visit blogs_path
-  #   expect(page).to 
+  #   expect(page).to
   # end
   #need more seeds and info to complete test
 end

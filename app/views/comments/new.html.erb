@@ -1,0 +1,6 @@
+<h2>Add Comment</h2>
+<%= form_with url: blog_comments_path(@blog.id), method: :post, local: true do |f|  %>
+  <%= f.label :comment_text %>:
+  <%= f.text_field :comment_text %>
+  <%= f.submit %>
+<% end %>
