@@ -15,11 +15,12 @@ RSpec.describe 'Blogs page' do
     # expect(current_path).to eq('Home')
   end
 
-  it 'has a link to the dashboard' do
+  xit 'has a link to the dashboard', :vcr do
+    #how do we use syntax to have a user logged in without having to say visit X log in and do blah blah blah..
     visit blogs_path
     expect(page).to have_link('Dashboard')
     click_on 'Dashboard'
-    # expect(current_path).to eq(dashboard_path)
+    expect(current_path).to eq(dashboard_path)
   end
 
   # it 'can list the top 10 blogs', :vcr do 

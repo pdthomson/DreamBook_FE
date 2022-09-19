@@ -23,14 +23,14 @@ RSpec.describe 'Welcome page' do
     expect(current_path).to eq(root_path)
   end
 
-  it 'has a link to log in or register' do
+  it 'has a link to log in or register', :vcr do
     visit root_path
     expect(page).to have_link('Log in/Register')
     click_on 'Log in/Register'
     expect(current_path).to eq(dashboard_path)
   end
 
-  it 'if logged in, no link to log in or create an account do' do
+  it 'if logged in, no link to log in or create an account do', :vcr do
     visit root_path
     expect(page).to have_link('Log in/Register')
     click_link 'Log in/Register'
@@ -43,7 +43,7 @@ RSpec.describe 'Welcome page' do
     expect(page).to have_link('Log in/Register')
   end
 
-  it 'has a link to the user dashboard' do
+  it 'has a link to the user dashboard', :vcr do
     visit root_path
     expect(page).to have_link('Log in/Register')
     click_link 'Log in/Register'

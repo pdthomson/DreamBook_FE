@@ -1,9 +1,9 @@
-require 'rails_helper'
+require "rails_helper"
 
-RSpec.describe 'Blogs Show' do
+RSpec.describe "Blog Create Page" do 
   before(:each) do
     OmniAuth.config.test_mode = true
-    OmniAuth.config.mock_auth[:google_oauth2] =
+    OmniAuth.config.mock_auth[:google_oauth2] = 
     OmniAuth::AuthHash.new({:provider => 'google',
                             :uid => '123545',
                             :info => {
@@ -15,20 +15,17 @@ RSpec.describe 'Blogs Show' do
                             }
                           })
   end
-  it 'it can redirect you to home' do
-    visit blogs_path
-    expect(page).to have_link('Home')
-    click_on 'Home'
-    expect(current_path).to eq(root_path)
-  end
 
-  it 'has a link to the dashboard', :vcr do
+  it 'creates a blog in the back end', :vcr do 
     visit root_path
-    click_on 'Log in'
-
-    visit blogs_path
-    expect(page).to have_link('Dashboard')
-    click_on 'Dashboard'
+    click_on 'Log in/Register'
+    visit '/blogs/new'
+    title = Faker::Book.title 
+    fill_in :title, with: title
+    fill_in :body, with: Faker::Fantasy::Tolkien.poem
+    select "shared", :from => "status"
+    click_on 'Submit'
     expect(current_path).to eq(dashboard_path)
+    expect(page).to have_link(title)
   end
 end
