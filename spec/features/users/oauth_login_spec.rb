@@ -5,7 +5,7 @@ RSpec.describe 'OAuth Login with Google' do
     before(:each) do
       OmniAuth.config.test_mode = true
     end
-    it 'redirects and creates a new user' do
+    it 'redirects and creates a new user', :vcr do
       OmniAuth.config.mock_auth[:google_oauth2] = 
         OmniAuth::AuthHash.new({:provider => 'google',
                                 :uid => '123545',

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,27 +20,23 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>   #this one works with '/' in 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sessions/:id method: :delete">Log Out</a>
+          <a class="nav-link" href="/session", method: :delete>Log Out</a> #this one does not work
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/dashboard/update"class="btn btn-dark">Change Username</a>
+          <a class="nav-link" href="/dashboard/update"class="btn btn-dark">Change Username</a>  #this one works autofills with email tho
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/users/:id, method: :delete">Delete</a>
+          <a class="nav-link" href="/users", method: :delete>Delete Account</a>  #this one does not work
         </li>
       </ul>
     </div>
   </div>
-</nav>
-    <h1>Dreamer Dashboard</h1>
-    <p>Dreamer: <%=  @user.username  %> </p>
-    <% if current_user %>
-    <%= button_to 'Log out', session_path(current_user.id), method: :delete %>
-    <%= button_to 'Delete Account|', user_path(current_user.id), method: :delete %>
-    <% end %>
+</nav> 
+
+#the below script was what the docs told me to add so that boot strap works with popper javascript 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
     crossorigin="anonymous">
@@ -55,4 +52,18 @@
   </body>
 </html>
 
+
+
+#this is the origin links i removed home and change username since those are working in nav bar 
+    <h1>Dreamer Dashboard</h1>
+    <p>Dreamer: <%=  @user.username  %> </p>
+     <% if current_user %>
+     <%= button_to 'Log out', session_path(current_user.id), method: :delete %>
+     <%= button_to 'Delete Account|', user_path(current_user.id), method: :delete %>
+     <% end %>  
+
+
+<% @user_blogs.each do |blog| %>
+    <%= link_to "#{blog.title}", blog_path(blog.id) %>
+<% end %>
 
