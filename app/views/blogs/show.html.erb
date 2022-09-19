@@ -19,11 +19,10 @@
 <%# <h6 class="container text-right"><%= @blog.comments.body%></h6> 
 
 <h6 class="container text-right"> <% @comments[:data].each do |comment| %>
-  <%= comment[:attributes][:comment_text] %>
+<%= comment[:attributes][:comment_text] %>
   <br><br><br>
 <% end %>
 </h6>
-
 
 <br><br><br><br><br><br>
  <h6 class="container text-right">Add Comment</h6>

@@ -31,4 +31,17 @@ RSpec.describe 'Blogs Show' do
     click_on 'Dashboard'
     expect(current_path).to eq(dashboard_path)
   end
+  it 'it has a title, body, and comments section', :vcr do
+    visit root_path
+    click_on 'Log in'
+    visit "/blogs/2"
+    expect(page).to have_content('Flying cats')
+    expect(page).to have_content("a dream where cats were flying")
+    expect(page).to have_content("Comments:")
+    # within "#comments" do
+    #   expect(page).to have_content("sounds so pretty!")
+    # end
+  end
 end
+
+ 
