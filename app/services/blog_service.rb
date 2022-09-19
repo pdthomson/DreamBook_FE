@@ -2,7 +2,8 @@ class BlogService
 
   class << self
 
-    def conn 
+    def conn
+      # Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
       Faraday.new(url: "http://localhost:5000/api/v1/")
     end
 

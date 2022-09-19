@@ -1,3 +1,4 @@
+
 <div class="bg-secondary text-white">
   <div class="container text-right">
     <%= link_to 'Home', root_path %> |
@@ -22,4 +23,13 @@
 </div>
 
 <h6 class="container text-right"> Comments: </h6>
- <%# <h6 class="container text-right"><%= @blog.comments.body%></h6> 
+<%# <h6 class="container text-right"><%= @blog.comments.body%></h6> 
+<%= @blog.title %>
+<br><br>
+<%= @blog.body %>
+<br><br><br>
+<% @comments[:data].each do |comment| %>
+  <%= comment[:attributes][:comment_text] %>
+  <br><br><br>
+<% end %>
+
