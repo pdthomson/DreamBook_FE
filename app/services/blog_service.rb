@@ -3,7 +3,7 @@ class BlogService
   class << self
 
     def conn 
-      Faraday.new(url: "http://localhost:5000/api/v1/")
+      Faraday.new(url: "https://still-hamlet-71640.herokuapp.com/api/v1/")
     end
 
     def json_response(response)
