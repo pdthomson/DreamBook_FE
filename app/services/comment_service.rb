@@ -2,7 +2,7 @@ class CommentService
   class << self
 
     def conn
-      Faraday.new(url: "https://still-hamlet-71640.herokuapp.com/api/v1/")
+      Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
     end
 
     def json_response(response)
@@ -10,7 +10,7 @@ class CommentService
     end
 
     def get_all_comments(blog_id)
-      response = conn.get("blogs/#{blog_id}/comments")
+      response = conn.get("/api/v1/blogs/#{blog_id}/comments")
       json_response(response)
     end
   end
