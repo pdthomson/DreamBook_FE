@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/1/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"70d4df12be8f0eb4f271a1d0329a9282"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e085d99e-8d17-4366-9fe8-2b91021e793b
+      X-Runtime:
+      - '0.002672'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"user_id":2,"blog_id":1,"comment_text":"sounds
+        like a nighmare!"}},{"id":"2","type":"comment","attributes":{"user_id":3,"blog_id":1,"comment_text":"thats
+        happened to me too!"}},{"id":"20","type":"comment","attributes":{"user_id":18,"blog_id":1,"comment_text":"No
+        Highway"}},{"id":"27","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"yep!"}},{"id":"28","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"sgs"}},{"id":"29","type":"comment","attributes":{"user_id":12,"blog_id":1,"comment_text":"Cover
+        Her Face"}}]}'
+  recorded_at: Mon, 19 Sep 2022 22:55:13 GMT
+recorded_with: VCR 6.1.0
