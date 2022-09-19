@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"989fda992c11e8d116f45e83a16d7725"
+      - W/"70d4df12be8f0eb4f271a1d0329a9282"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - faa79beb-a037-4b63-aa17-2a04d5ac6aa4
+      - e8120961-3121-4ff6-8ef8-8b9443fd58cc
       X-Runtime:
-      - '0.013567'
+      - '0.007018'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,6 +35,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"comment","attributes":{"user_id":2,"blog_id":1,"comment_text":"sounds
         like a nighmare!"}},{"id":"2","type":"comment","attributes":{"user_id":3,"blog_id":1,"comment_text":"thats
         happened to me too!"}},{"id":"20","type":"comment","attributes":{"user_id":18,"blog_id":1,"comment_text":"No
-        Highway"}},{"id":"27","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"yep!"}},{"id":"28","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"sgs"}}]}'
-  recorded_at: Mon, 19 Sep 2022 22:55:11 GMT
+        Highway"}},{"id":"27","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"yep!"}},{"id":"28","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"sgs"}},{"id":"29","type":"comment","attributes":{"user_id":12,"blog_id":1,"comment_text":"Cover
+        Her Face"}}]}'
+  recorded_at: Mon, 19 Sep 2022 23:00:31 GMT
 recorded_with: VCR 6.1.0
