@@ -25,7 +25,7 @@ RSpec.describe "Comments Create Page" do
                 title: 'Purple Lizards',
                 body: 'Had a dream where there was purple lizards everywhere',
                 status: 'shared',
-                user_id: 6
+                user_id: 1
                 })
     # blog = BlogService.send_blog(blog_params)
     blog = BlogFacade.user_blog(blog_params[:user_id])
