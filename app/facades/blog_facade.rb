@@ -9,6 +9,10 @@ class BlogFacade
       end
     end
 
+    # def individual_blog(blog_id)
+    #   blog = Blog.new(BlogService.find_blog(blog_id)[:data])
+    # end
+
     def user_blogs(current_user_id)
       all_blogs.find_all { |blog| blog.user_id == current_user_id }
     end

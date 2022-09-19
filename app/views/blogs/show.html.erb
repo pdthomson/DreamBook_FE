@@ -1,0 +1,25 @@
+<div class="bg-secondary text-white">
+  <div class="container text-right">
+    <%= link_to 'Home', root_path %> |
+    <%= link_to 'Dashboard', dashboard_path, method: :get %> |
+    <%= link_to 'Logout' %>
+  </div>
+  <div class="container text-center">
+  <h2><%= @blog.title %></h2>
+  <p class="text-primary"></p>
+  </div>
+</div>
+
+ <div class="container text-center"> <h3><%= @blog.body %></h3>
+ </div>
+
+ <h6 class="container text-center">Add Comment</h6>
+<div class="container text-center"> <%= form_with url: blog_comments_path(@blog.id), method: :post, local: true do |f|  %>
+  <%= f.label :comment_text %>:
+  <%= f.text_field :comment_text %>
+  <%= f.submit %>
+<% end %>
+</div>
+
+<h6 class="container text-right"> Comments: </h6>
+ <%# <h6 class="container text-right"><%= @blog.comments.body%></h6> 

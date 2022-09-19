@@ -6,6 +6,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @blog = BlogFacade.user_blog(params[:id])
   end
 
   def new
