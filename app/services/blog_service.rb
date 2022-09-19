@@ -1,4 +1,4 @@
-class BlogService 
+class BlogService
 
   class << self
 
@@ -8,7 +8,7 @@ class BlogService
 
     def json_response(response)
       JSON.parse(response.body, symbolize_names: true)
-    end 
+    end
 
     def get_all_blogs
       response = conn.get('/api/v1/blogs')
@@ -22,9 +22,12 @@ class BlogService
         user_id: blog_params[:user_id],
         status: blog_params[:status]
       }.to_json, "Content-Type" => "application/json")
-      
       json_response(response)
-      
+    end
+
+    def find_blog(blog_id)
+      response = conn.get("blogs/#{blog_id}")
+      json_response(response)
     end
   end
 end

@@ -12,4 +12,20 @@ RSpec.describe BlogService do
      expect(first_blog[:status]).to be_a String
      expect(first_blog[:user_id]).to be_a Integer
    end
+
+   it 'sends a blog', :vcr do
+     blog_params = ({
+                    title: 'testing',
+                    body: 'body test',
+                    user_id: 1,
+                    status: 'shared'
+                    })
+
+     response = BlogService.send_blog(blog_params)
+     new_blog = BlogService.get_all_blogs[:data].last
+     expect(new_blog[:attributes][:title]).to eq('testing')
+     expect(new_blog[:attributes][:body]).to eq('body test')
+     expect(new_blog[:attributes][:user_id]).to eq(1)
+     expect(new_blog[:attributes][:status]).to eq('shared')
+   end
 end
