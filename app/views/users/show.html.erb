@@ -6,3 +6,8 @@
     <%= link_to 'Delete Account', user_path(current_user.id), method: :delete %>
     <%= link_to 'Change Username', '/dashboard/update' %>
 <% end %>
+
+
+<% @user_blogs.each do |blog| %>
+    <%= link_to "#{blog.title}", blog_path(blog.id) %>
+<% end %>

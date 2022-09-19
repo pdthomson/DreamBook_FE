@@ -16,7 +16,7 @@ RSpec.describe 'User Show Page' do
                           })
   end
 
-  it 'If user is logged in page has a link to log out and home page' do
+  it 'If user is logged in page has a link to log out and home page', :vcr do
     visit root_path
     click_on 'Log in/Register'
     expect(current_path).to eq(dashboard_path)
@@ -24,7 +24,7 @@ RSpec.describe 'User Show Page' do
     expect(page).to have_link('Log out')
   end
 
-  it 'can delete the user' do
+  it 'can delete the user', :vcr do
     visit root_path
     click_on 'Log in/Register'
     expect(current_path).to eq(dashboard_path)
@@ -35,7 +35,7 @@ RSpec.describe 'User Show Page' do
     expect(current_path).to eq(root_path)
   end
 
-  it 'can update a username' do
+  it 'can update a username', :vcr do
     visit root_path
     click_on 'Log in/Register'
     expect(current_path).to eq(dashboard_path)
