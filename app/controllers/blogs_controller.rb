@@ -6,6 +6,8 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @blog = BlogFacade.user_blog(params[:id])
+    @comments = CommentService.get_all_comments(@blog.id)
   end
 
   def new
