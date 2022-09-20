@@ -17,7 +17,7 @@ RSpec.describe 'update blog' do
   end
 
   xit 'it can update a blog', :vcr do
-    visit blogs_path
+    visit '/blogs/1'
     expect(page).to have_link('Update')
     click_on 'Update'
     expect(current_path).to eq(blog_path)
