@@ -1,4 +1,7 @@
 <h1>Share Your Dream!</h1>
+<%= link_to 'Home', root_path %> |
+<%= link_to 'Dashboard', dashboard_path, method: :get %> |
+<%= link_to 'Logout' %>
 <%= form_with url: "/blogs", method: :post, local: true do |f| %>
   <%= f.label :title %>:
   <%= f.text_field :title %>

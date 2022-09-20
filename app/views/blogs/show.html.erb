@@ -60,6 +60,8 @@
   <p><%= image_tag ("DreamBookLogo.png"), :class => "logo" %></p>
     </div>
  <div class="body text-center"> <h3>"<%= @blog.body %>"</h3>
+ <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "link", method: :get %>
+ <br>
  </div>
 
 <h5 class="container text-right"> Comments: </h5>

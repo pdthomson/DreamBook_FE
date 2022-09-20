@@ -30,5 +30,16 @@ class BlogService
       response = conn.get("/api/v1/blogs/#{blog_id}")
       json_response(response)
     end
+
+    def revise_blog(blog_params)
+      response = conn.patch("/api/v1/blogs/#{blog_params[:id]}", {
+        title: blog_params[:title],
+        body: blog_params[:body],
+        # user_id: blog_params[:user_id],
+        status: blog_params[:status],
+        keyword: blog_params[:keyword]
+      }.to_json, "Content-Type" => "application/json")
+      json_response(response)
+    end
   end
 end
