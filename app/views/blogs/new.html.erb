@@ -6,6 +6,9 @@
   <%= f.label :body%>:
   <%= f.text_field :body %>
   <br>
+  <%= f.label :keyword %>:
+  <%= f.text_field :keyword %>
+  <br>
   <%= f.hidden_field :user_id, :value => current_user.id %>
   <br>
   <%= f.select :status, ['hidden', 'shared']%>
