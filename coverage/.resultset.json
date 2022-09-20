@@ -1,12 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/facades/blog_facade.rb": {
         "lines": [
           1,
@@ -16,12 +10,12 @@
           1,
           24,
           24,
-          2499,
+          3195,
           null,
           null,
           null,
           1,
-          1789,
+          2282,
           null,
           null,
           1,
@@ -73,12 +67,12 @@
           null,
           null,
           1,
-          2504,
-          2504,
-          2504,
-          2504,
-          2504,
-          2504,
+          3200,
+          3200,
+          3200,
+          3200,
+          3200,
+          3200,
           null,
           null
         ]
@@ -215,6 +209,7 @@
           12,
           null,
           null,
+          null,
           12,
           12,
           null,
@@ -313,46 +308,8 @@
           null,
           null
         ]
-      },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/turingtjc/Turing/3Module/consultancy/DreamBook_FE/app/channels/application_cable/channel.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1663636987
+    "timestamp": 1663639955
   }
 }
