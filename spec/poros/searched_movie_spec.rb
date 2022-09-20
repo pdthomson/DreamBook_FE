@@ -3,10 +3,9 @@ require 'rails_helper'
 RSpec.describe SearchedMovie do
   it 'exists and has attributes' do
     data = {
-      :data=>
-      {:id=>925813, 
+      :id=>925813, 
         :type=>"movie", 
-        :attributes=>{:title=>"Lot Lizards", :description=>"Four truck stop prostitutes overthrow their pimp, and decide to take what they want by any means necessary."}}
+        :attributes=>{:title=>"Lot Lizards", :description=>"Four truck stop prostitutes overthrow their pimp, and decide to take what they want by any means necessary."}
     }
 
     movie_matching_keyword = SearchedMovie.new(data)
