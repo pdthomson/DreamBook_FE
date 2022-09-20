@@ -2,7 +2,12 @@ class CommentService
   class << self
 
     def conn
+<<<<<<< Updated upstream
       Faraday.new(url: "https://still-hamlet-71640.herokuapp.com/api/v1/")
+=======
+      Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
+      # Faraday.new(url: ENV['BACKEND_URL'])
+>>>>>>> Stashed changes
     end
 
     def json_response(response)
