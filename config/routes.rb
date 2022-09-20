@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :users
   resources :sessions
-  resources :blogs, only: [:index, :show, :new, :create] do
+  resources :blogs do
     resources :comments
   end
 

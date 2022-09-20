@@ -1,0 +1,15 @@
+
+<%= form_with url: blog_path(@blog.id), method: :patch, local: true do |f| %>
+    <%= f.label :title, "Title:" %>
+    <%= f.text_field :title, :value => @blog.title %>
+    <%= f.label :body, "Dream Details:" %>
+    <%= f.text_field :body, :value => @blog.body %>
+    <%= f.label :keyword, "Dream Keyword:" %>
+    <%= f.text_field :keyword, :value => @blog.keyword %>
+    <%= f.label :status, "Shared/Hidden:" %>
+    <%= f.select :status, ['shared', 'hidden'], :value => @blog.status %>
+    <%# <%= f.hidden_field :user_id, :value => current_user.id %> 
+    <%= f.hidden_field :blog_id, :value => @blog.id %>
+    <%# <% binding.pry %> 
+    <%= f.submit "Update"  %>
+<% end %>

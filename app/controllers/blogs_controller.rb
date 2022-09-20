@@ -24,9 +24,36 @@ class BlogsController < ApplicationController
     end
   end
 
+  def edit
+    @blog = BlogFacade.user_blog(params[:id])
+  end
+
+  def update
+    blog = BlogFacade.update_blog(blog_params)
+    # if blog.save
+      #  if blog.update(blog_params)
+      redirect_to blog_path(blog_params[:id])
+  #     flash[:alert] = "Blog has been updated!"
+  #   else
+  #     redirect_to edit_blog_path(blog)
+  #     flash[:alert] = "Error: Missing data"
+  # end
+end
+
+  # end
+  # def self.update_address(user_id, location)
+  #   BackendService.update_location(user_id, location)
+  # end
+
+  # def destroy
+  #BlogFacade.delete_blog()
+  # flash[:success] = 'Blog Deleted!'
+  # redirect_to 
+  # end
+
   private
 
   def blog_params
-    params.permit(:title, :body, :user_id, :status, :keyword)
+    params.permit(:title, :body, :user_id, :status, :keyword, :id)
   end
 end

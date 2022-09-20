@@ -10,4 +10,11 @@ class CommentsController < ApplicationController
     CommentService.send_comment(params)
     redirect_to blog_path(blog.id)
   end
+
+  # def comment
+  #CommentFacade.delete_blog()
+  # flash[:success] = 'Comment Deleted!'
+  # redirect_to 
+  # end
 end
+
