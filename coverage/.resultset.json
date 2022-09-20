@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/facades/blog_facade.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/facades/blog_facade.rb": {
         "lines": [
           1,
           null,
@@ -10,7 +10,7 @@
           1,
           25,
           25,
-          1028,
+          1128,
           null,
           null,
           null,
@@ -19,7 +19,7 @@
           null,
           null,
           1,
-          760,
+          832,
           null,
           null,
           1,
@@ -30,7 +30,7 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/facades/comment_facade.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/facades/comment_facade.rb": {
         "lines": [
           1,
           1,
@@ -38,14 +38,14 @@
           1,
           1,
           1,
-          6,
+          2,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/models/user.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -53,14 +53,14 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/models/application_record.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/poros/blog.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/blog.rb": {
         "lines": [
           1,
           1,
@@ -71,31 +71,31 @@
           null,
           null,
           1,
-          1034,
-          1034,
-          1034,
-          1034,
-          1034,
-          1034,
+          1134,
+          1134,
+          1134,
+          1134,
+          1134,
+          1134,
           null,
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/poros/comment.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/comment.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
-          7,
-          7,
-          7,
+          3,
+          3,
+          3,
           null,
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/services/blog_service.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/services/blog_service.rb": {
         "lines": [
           1,
           null,
@@ -133,7 +133,7 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/services/comment_service.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/services/comment_service.rb": {
         "lines": [
           1,
           1,
@@ -165,7 +165,7 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/controllers/welcome_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
           null,
@@ -174,19 +174,19 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/controllers/application_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
-          146,
+          150,
           null,
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/controllers/users_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/users_controller.rb": {
         "lines": [
           1,
           null,
@@ -245,7 +245,7 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/controllers/blogs_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/blogs_controller.rb": {
         "lines": [
           1,
           null,
@@ -281,7 +281,7 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/controllers/comments_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/comments_controller.rb": {
         "lines": [
           1,
           null,
@@ -298,7 +298,7 @@
           null
         ]
       },
-      "/Users/nikkyrojas/turing/3mod/projects/group_project/DreamBook_FE/app/controllers/sessions_controller.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           1,
@@ -312,6 +312,6 @@
         ]
       }
     },
-    "timestamp": 1663682051
+    "timestamp": 1663702903
   }
 }

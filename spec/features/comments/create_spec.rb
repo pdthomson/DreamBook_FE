@@ -22,13 +22,14 @@ RSpec.describe "Comments Create Page" do
     click_on 'Log in/Register'
     click_on 'Dreams'
     blog_params= ({
-                title: 'Purple Lizards',
-                body: 'Had a dream where there was purple lizards everywhere',
-                status: 'shared',
-                user_id: 1
+                id: 6,
+                title: 'Meshuggah',
+                body: 'all chugs all the time',
+                status: 0,
+                user_id: 2
                 })
     # blog = BlogService.send_blog(blog_params)
-    blog = BlogFacade.user_blog(blog_params[:user_id])
+    blog = BlogFacade.user_blog(blog_params[:id])
     first(:button, 'Comment').click
     expect(current_path).to eq("/blogs/#{blog.id}/comments/new")
     comment = Faker::Book.title
