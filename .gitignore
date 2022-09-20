@@ -32,3 +32,4 @@
 # Ignore coverage folder
 /coverage
 /coverage/*
+/spec/fixtures
