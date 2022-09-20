@@ -21,6 +21,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
+<<<<<<< Updated upstream
       - W/"f5fdab762c752ebe0fa04d591ae8ae20"
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -77,4 +78,40 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":[]}'
   recorded_at: Mon, 19 Sep 2022 18:42:02 GMT
+=======
+      - W/"9df34e5708871df2675e8fabe2a3d7f5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2c871613-982f-4fc0-b52b-f1e183e805a7
+      X-Runtime:
+      - '0.002816'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"Roads go ever, ever on","status":"shared","user_id":132}},{"id":"5","type":"blog","attributes":{"title":"Mother
+        Night","body":"Through Rohan Over Fen and Field Where the Long Grass Grows","status":"shared","user_id":204}},{"id":"6","type":"blog","attributes":{"title":"No
+        Country for Old Men","body":"When evening in the Shire was grey","status":"shared","user_id":216}},{"id":"7","type":"blog","attributes":{"title":"Endless
+        Night","body":"All That Is Gold Does Not Glitter","status":"shared","user_id":228}},{"id":"8","type":"blog","attributes":{"title":"Death
+        Be Not Proud","body":"Old fat spider spinning in a tree!","status":"shared","user_id":240}},{"id":"9","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":245}},{"id":"10","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"12","type":"blog","attributes":{"title":"The
+        Way of All Flesh","body":"An Elven-maid there was of old","status":"shared","user_id":251}},{"id":"13","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":259}},{"id":"14","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"15","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"16","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Roads go ever, ever on","status":"shared","user_id":310}},{"id":"17","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":318}},{"id":"18","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"19","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"20","type":"blog","attributes":{"title":"Butter
+        In a Lordly Dish","body":"Hey! Now! Come Hoy Now! Whither Do You Wander?","status":"shared","user_id":326}},{"id":"21","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":334}}]}'
+  recorded_at: Tue, 20 Sep 2022 03:47:47 GMT
+>>>>>>> Stashed changes
 recorded_with: VCR 6.1.0

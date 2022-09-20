@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8725db8660ef6a73b8e262a2187ee709"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 614a1d22-a76c-4329-ae50-a014d55c886b
+      X-Runtime:
+      - '0.002824'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"Roads go ever, ever on","status":"shared","user_id":132}},{"id":"5","type":"blog","attributes":{"title":"Mother
+        Night","body":"Through Rohan Over Fen and Field Where the Long Grass Grows","status":"shared","user_id":204}},{"id":"6","type":"blog","attributes":{"title":"No
+        Country for Old Men","body":"When evening in the Shire was grey","status":"shared","user_id":216}},{"id":"7","type":"blog","attributes":{"title":"Endless
+        Night","body":"All That Is Gold Does Not Glitter","status":"shared","user_id":228}},{"id":"8","type":"blog","attributes":{"title":"Death
+        Be Not Proud","body":"Old fat spider spinning in a tree!","status":"shared","user_id":240}},{"id":"9","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":245}},{"id":"10","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"12","type":"blog","attributes":{"title":"The
+        Way of All Flesh","body":"An Elven-maid there was of old","status":"shared","user_id":251}},{"id":"13","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":259}},{"id":"14","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"15","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"16","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Roads go ever, ever on","status":"shared","user_id":310}},{"id":"17","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":318}},{"id":"18","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"19","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"20","type":"blog","attributes":{"title":"Butter
+        In a Lordly Dish","body":"Hey! Now! Come Hoy Now! Whither Do You Wander?","status":"shared","user_id":326}}]}'
+  recorded_at: Tue, 20 Sep 2022 03:47:46 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8725db8660ef6a73b8e262a2187ee709"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ff1c6e00-876b-4669-8279-bf195cc5ce0e
+      X-Runtime:
+      - '0.002726'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"Roads go ever, ever on","status":"shared","user_id":132}},{"id":"5","type":"blog","attributes":{"title":"Mother
+        Night","body":"Through Rohan Over Fen and Field Where the Long Grass Grows","status":"shared","user_id":204}},{"id":"6","type":"blog","attributes":{"title":"No
+        Country for Old Men","body":"When evening in the Shire was grey","status":"shared","user_id":216}},{"id":"7","type":"blog","attributes":{"title":"Endless
+        Night","body":"All That Is Gold Does Not Glitter","status":"shared","user_id":228}},{"id":"8","type":"blog","attributes":{"title":"Death
+        Be Not Proud","body":"Old fat spider spinning in a tree!","status":"shared","user_id":240}},{"id":"9","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":245}},{"id":"10","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"12","type":"blog","attributes":{"title":"The
+        Way of All Flesh","body":"An Elven-maid there was of old","status":"shared","user_id":251}},{"id":"13","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":259}},{"id":"14","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"15","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"16","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Roads go ever, ever on","status":"shared","user_id":310}},{"id":"17","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":318}},{"id":"18","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"19","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"20","type":"blog","attributes":{"title":"Butter
+        In a Lordly Dish","body":"Hey! Now! Come Hoy Now! Whither Do You Wander?","status":"shared","user_id":326}}]}'
+  recorded_at: Tue, 20 Sep 2022 03:47:46 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f9e2dab958aebc16b15880edcb7d175f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1a024190-5924-4d47-b859-987df5d33e4d
+      X-Runtime:
+      - '0.003266'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"blog","attributes":{"title":"No Country for
+        Old Men","body":"When evening in the Shire was grey","status":"shared","user_id":216}}}'
+  recorded_at: Tue, 20 Sep 2022 03:47:46 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36d9ac1df5c93b46ec4c3e84772a714e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 438c2e7c-7f9b-4686-b814-93a957cef883
+      X-Runtime:
+      - '0.001809'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
+  recorded_at: Tue, 20 Sep 2022 03:47:46 GMT
+recorded_with: VCR 6.1.0
