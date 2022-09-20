@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'simplecov'
-SimpleCov.start
+# require 'simplecov'
+# SimpleCov.start
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
@@ -68,6 +68,7 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.include FactoryBot::Syntax::Methods
+  OmniAuth.config.silence_get_warning = true
 
   # config.include RequestSpecHelper, type: :request
 end
@@ -86,3 +87,8 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+SimpleCov.add_filter 'coverage'
+SimpleCov.add_filter ["app/channels", "app/helpers", "app/mailers", "app/jobs"]
+SimpleCov.add_filter 'app/controllers/concerns/exception_handler.rb'
+SimpleCov.add_filter 'spec/rails_helper.rb'
+SimpleCov.add_filter 'app/controllers/concerns/response.rb'
