@@ -29,7 +29,7 @@ class BlogService
     end
 
     def find_blog(blog_id)
-      response = conn.get("blogs/#{blog_id}")
+      response = conn.get("/api/v1/blogs/#{blog_id}")
       json_response(response)
     end
   end

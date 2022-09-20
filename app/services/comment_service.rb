@@ -17,7 +17,7 @@ class CommentService
 
     def send_comment(comment_params)
       blog_id = comment_params[:blog_id].to_i
-      response = conn.post("blogs/#{blog_id}/comments", {
+      response = conn.post("/api/v1/blogs/#{blog_id}/comments", {
         comment_text: comment_params[:comment_text],
         blog_id: comment_params[:blog_id],
         user_id: comment_params[:user_id],
