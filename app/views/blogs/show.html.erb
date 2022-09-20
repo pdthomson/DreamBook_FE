@@ -1,0 +1,8 @@
+<%= @blog.title %>
+<br><br>
+<%= @blog.body %>
+<br><br><br>
+<% @comments[:data].each do |comment| %>
+  <%= comment[:attributes][:comment_text] %>
+  <br><br><br>
+<% end %>

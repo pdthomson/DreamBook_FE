@@ -2,9 +2,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :users
   resources :sessions
-  resources :blogs, only: [:index, :show, :new, :create]
+  resources :blogs, only: [:index, :show, :new, :create] do
+    resources :comments
+  end
 
-
+  get "/blogs/:id/comments/new", to: 'comments#new'
   get '/dashboard', to: 'users#show'
   get '/dashboard/update', to: 'users#edit'
   patch '/dashboard', to: 'users#update'

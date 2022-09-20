@@ -1,13 +1,68 @@
-<h1>Dreamer Dashboard</h1>
-<p>Dreamer: <%=  @user.username  %> </p>
-<%= link_to 'Home', root_path %> |
-<% if current_user %>
-    <%= link_to 'Log out', session_path(current_user.id), method: :delete %>
-    <%= link_to 'Delete Account', user_path(current_user.id), method: :delete %>
-    <%= link_to 'Change Username', '/dashboard/update' %>
-<% end %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+  .jumbotron {
+    background-color: #3E3458;
+    color: #fff;
+  }
+
+  .container {
+    background-color: black;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .logo {
+    height: 45%;
+    width: 45%;
+  }
+
+  .link {
+    color: #fff;
+    font-size: medium;
+    text-decoration: bold;
+    float: right;
+    background-color: #3E3458;
+  }
+</style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<h1 class="display-3">Dreamer Dashboard</h1>
+  <p>Dreamer: <%=  @user.username  %></p>
+  <nav class="navbar navbar-expand-sm bg-#3E3458 navbar-dark fixed-top">
+    <%= link_to 'Home', root_path, :class => "link" %> |
+    <% if current_user %>
+      <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %> |
+      <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %> |
+      <%= link_to 'Change Username', '/dashboard/update', :class => "link" %>
+      <%= link_to 'Record a Dream', new_blog_path %>
+      <%= link_to 'Dreams', blogs_path %>
+    <% end %>
+  </div>
+
+<div class="container-fluid p-4 my-3 border">
+  <div class="row">
+    <div class="col-sm-4">
+  <p><%= image_tag ("DreamBookLogo.png"), :class => "logo" %></p>
+    </div>
 
 
-<% @user_blogs.each do |blog| %>
-    <%= link_to "#{blog.title}", blog_path(blog.id) %>
-<% end %>
+    <div class="col-sm-8 text-white">
+      <h4>Blogs</h4><br><br>
+      <% @user_blogs.each do |blog| %>
+        <%= link_to "#{blog.title}", blog_path(blog.id) %>
+    <% end %>
+    </div>
+  </div>
+</div>
