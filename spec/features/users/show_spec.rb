@@ -50,7 +50,7 @@ RSpec.describe 'User Show Page' do
   it 'can create a public blog', :vcr do
     visit root_path
     click_on 'Log in/Register'
-    expect(page).to have_button('Record a Dream')
+    expect(page).to have_link('Record a Dream')
     click_on 'Record a Dream'
     expect(current_path).to eq(new_blog_path)
     fill_in :title, with: 'Test'

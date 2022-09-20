@@ -22,7 +22,8 @@ class BlogService
         title: blog_params[:title],
         body: blog_params[:body],
         user_id: blog_params[:user_id],
-        status: blog_params[:status]
+        status: blog_params[:status],
+        keyword: blog_params[:keyword]
       }.to_json, "Content-Type" => "application/json")
       json_response(response)
     end
