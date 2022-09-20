@@ -24,6 +24,12 @@ class BlogsController < ApplicationController
     end
   end
 
+  # def destroy
+  #BlogFacade.delete_blog()
+  # flash[:success] = 'Blog Deleted!'
+  # redirect_to 
+  # end
+
   private
 
   def blog_params
