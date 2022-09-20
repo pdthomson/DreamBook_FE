@@ -4,7 +4,8 @@ class BlogService
 
 
     def conn 
-      Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
+      # Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
+      Faraday.new(url: ENV['BACKEND_URL'])
     end
 
     def json_response(response)
