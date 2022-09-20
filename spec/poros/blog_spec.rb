@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Blog do 
+RSpec.describe Blog do
 
-  it 'exists and has attributes' do 
+  it 'exists and has attributes' do
     data = {
             id: 1,
             type: "blog",
@@ -10,7 +10,8 @@ RSpec.describe Blog do
               title: Faker::Book.title,
               body: Faker::Fantasy::Tolkien.poem,
               status: 0,
-              user_id: 123
+              user_id: 123,
+              keyword: 'hey there'
             }
           }
 
@@ -21,5 +22,6 @@ RSpec.describe Blog do
       expect(blog.body).to eq(data[:attributes][:body])
       expect(blog.status).to eq(data[:attributes][:status])
       expect(blog.user_id).to eq(data[:attributes][:user_id])
+      expect(blog.keyword).to eq(data[:attributes][:keyword])
   end
 end
