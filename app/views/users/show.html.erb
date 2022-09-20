@@ -16,11 +16,11 @@
   .container {
     background-color: black;
   }
- 
+
   body {
     background-color: black;
   }
- 
+
   .logo {
     height: 45%;
     width: 45%;
@@ -41,13 +41,15 @@
 <h1 class="display-3">Dreamer Dashboard</h1>
   <p>Dreamer: <%=  @user.username  %></p>
   <nav class="navbar navbar-expand-sm bg-#3E3458 navbar-dark fixed-top">
-    <%= link_to 'Home', root_path, :class => "link" %> | 
+    <%= link_to 'Home', root_path, :class => "link" %> |
     <% if current_user %>
-      <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %> | 
-      <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %> | 
+      <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %> |
+      <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %> |
       <%= link_to 'Change Username', '/dashboard/update', :class => "link" %>
+      <%= link_to 'Record a Dream', new_blog_path %>
+      <%= link_to 'Dreams', blogs_path %>
     <% end %>
-  </div> 
+  </div>
 
 <div class="container-fluid p-4 my-3 border">
   <div class="row">
