@@ -1,10 +1,9 @@
 class BlogService
 
   class << self
-
-    def conn
+    def conn 
       # Faraday.new(url: "https://fast-scrubland-25173.herokuapp.com")
-      Faraday.new(url: "http://localhost:5000/api/v1/")
+      Faraday.new(url: ENV['API_URL'])
     end
 
     def json_response(response)
@@ -12,22 +11,23 @@ class BlogService
     end
 
     def get_all_blogs
-      response = conn.get('blogs')
+      response = conn.get('/api/v1/blogs')
       json_response(response)
     end
 
     def send_blog(blog_params)
-      response = conn.post('blogs', {
+      response = conn.post('/api/v1/blogs', {
         title: blog_params[:title],
         body: blog_params[:body],
         user_id: blog_params[:user_id],
-        status: blog_params[:status]
+        status: blog_params[:status],
+        keyword: blog_params[:keyword]
       }.to_json, "Content-Type" => "application/json")
       json_response(response)
     end
 
     def find_blog(blog_id)
-      response = conn.get("blogs/#{blog_id}")
+      response = conn.get("/api/v1/blogs/#{blog_id}")
       json_response(response)
     end
   end
