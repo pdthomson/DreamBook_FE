@@ -16,7 +16,7 @@ RSpec.describe 'update blog' do
                           })
   end
 
-    it 'it can update a blog', :vcr do
+  xit 'it can update a blog', :vcr do
     visit blogs_path
     expect(page).to have_link('Update')
     click_on 'Update'
