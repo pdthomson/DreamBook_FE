@@ -112,7 +112,7 @@ body {
   <h4> Share Your Dream! </h4>
   <%= form_with url: "/blogs", method: :post, local: true do |f| %>
     <%= f.label :title%>:
-    <%= f.text_field :body, :class => "field-boxes" %>
+    <%= f.text_field :title, :class => "field-boxes" %>
     <br>
     <%= f.label :body %>:
     <br>
@@ -123,7 +123,8 @@ body {
     <br>
     <%= f.hidden_field :user_id, :value => current_user.id %>
     <br>
-    <div class="dropdown show">
+    <%= f.select :status, ['hidden', 'shared']%>
+    <%# <div class="dropdown show">
       <a class="btn color-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Blog Status
       </a>
@@ -131,7 +132,7 @@ body {
         <a class="dropdown-item" href="#">Hidden</a>
         <a class="dropdown-item" href="#">Shared</a>
       </div>
-    </div>
+    </div> %>
     <br>
     <input class="btn btn-primary color-button btn-lg border border-dark" type="submit" value="Submit">
   <% end %>

@@ -49,6 +49,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    user_blogs = BlogFacade.user_blogs(params[:id])
+    user_blogs.each do |blog|
+      BlogService.delete_blog(blog)
+    end
     User.find(params[:id]).destroy
     redirect_to root_path
     flash[:alert] = 'Account successfully deleted'
