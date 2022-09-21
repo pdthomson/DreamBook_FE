@@ -16,6 +16,8 @@ RSpec.describe 'Blogs Show' do
                           })
   end
   it 'it can redirect you to home', :vcr do
+    visit root_path
+    click_on 'Log in'
     visit blogs_path
     expect(page).to have_link('Home')
     click_on 'Home'

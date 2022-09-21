@@ -8,13 +8,17 @@ class UsersController < ApplicationController
 
   def show
      @user_blogs = BlogFacade.user_blogs(current_user.id)
+
      keywords = @user_blogs.map do |blog|
        blog.keyword
      end
-     @movies = answer = []
-     keywords.each do |keyword|
-       answer << SearchedMovieFacade.two_movies_matching_searched_keyword(keyword)
+     @movies = keywords.map do |keyword|
+      SearchedMovieFacade.one_movie_matching_searched_keyword(keyword)
      end
+     @books = keywords.map do |keyword|
+      SearchedBookFacade.one_book_matching_searched_keyword(keyword)
+     end
+
      if current_user.nil?
        redirect_to root_path
        flash[:notice] = "You must login or register to visit your dashboard."
@@ -49,6 +53,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    user_blogs = BlogFacade.user_blogs(params[:id])
+    user_blogs.each do |blog|
+      BlogService.delete_blog(blog)
+    end
     User.find(params[:id]).destroy
     redirect_to root_path
     flash[:alert] = 'Account successfully deleted'

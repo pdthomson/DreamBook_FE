@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
   end
 
   # def comment
-  #CommentFacade.delete_blog()
+  #CommentService.delete_comment()
   # flash[:success] = 'Comment Deleted!'
   # redirect_to 
   # end

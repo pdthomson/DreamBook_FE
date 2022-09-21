@@ -115,5 +115,16 @@
 
 <% @movies.each do |movie| %>
   <%= movie.title %>
-  <%= movie.description %>
+  <%= movie.description[0..100] %>...
 <% end %>
+
+<% @books.each do |book| %>
+  <% if book.blank? %>
+      <%= book.title = ""  %>
+      <%= book.author = "" %>
+  <% else %>
+      <%= book.title %>
+      <%= book.author %>
+  <% end %>
+<% end %>
+

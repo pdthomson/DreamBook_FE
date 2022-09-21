@@ -42,7 +42,7 @@ class BlogsController < ApplicationController
   def destroy
     BlogService.delete_blog(blog_params)
     flash[:success] = 'Blog Deleted!'
-    redirect_to user_path
+    redirect_to dashboard_path
   end
 
   private
