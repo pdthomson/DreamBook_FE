@@ -41,5 +41,10 @@ class BlogService
       }.to_json, "Content-Type" => "application/json")
       json_response(response)
     end
+
+    def delete_blog(blog_params)
+      response = conn.delete("/api/v1/blogs/#{blog_params[:id]}")
+    end
+
   end
 end

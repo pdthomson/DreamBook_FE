@@ -51,6 +51,7 @@
     <% if current_user %>
       <%= link_to ' Log out ', session_path(current_user.id), :class => "link", method: :delete %> |
       <%= link_to ' Dreams ', blogs_path %>| 
+      <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get%>
     <% end %>
   </div>
 
@@ -61,6 +62,7 @@
     </div>
  <div class="body text-center"> <h3>"<%= @blog.body %>"</h3>
  <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "link", method: :get %>
+ <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "link", method: :delete %>
  <br>
  </div>
 

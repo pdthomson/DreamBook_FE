@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'update blog' do
+RSpec.describe 'Deletes blog' do
     before(:each) do
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] =
@@ -16,7 +16,7 @@ RSpec.describe 'update blog' do
                           })
   end
 
-  it 'it can update a blog', :vcr do
+  it 'it can Delete a blog', :vcr do
     visit root_path
     click_on 'Log in/Register'
     click_on 'Record a Dream'
@@ -26,15 +26,10 @@ RSpec.describe 'update blog' do
     select "shared", :from => "status"
     click_on 'Submit'
     click_on 'Green Skies'
-    expect(page).to have_link('Update Blog')
+    save_and_open_page
+    click_on 'Delete Blog'
     
-    click_on 'Update Blog'
-    fill_in :title, with: "Blue Skies"
-    fill_in :body, with: "A relaxing dream about the sky"
-    fill_in :keyword, with: 'sky'
-    select "shared", :from => "status"
-    click_on 'Update'
-    expect(page).to have_content('Blue Skies')
+    expect(page).to_not have_content('Green Skies')
   end
 
 end
