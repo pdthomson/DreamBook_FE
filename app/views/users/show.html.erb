@@ -9,60 +9,107 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <style>
   .jumbotron {
+    max-height: 250px;
     background-color: #3E3458;
     color: #fff;
   }
 
   .container {
     background-color: black;
+    color: #fff;
   }
 
   body {
     background-color: black;
   }
 
-  .logo {
-    height: 45%;
-    width: 45%;
+  .logo { 
+    max-width: 525px; 
+    max-height: 525px;
+    text: center;
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-bottom: 200px;
   }
 
   .link {
     color: #fff;
-    font-size: medium;
+    font-size: 21px;
     text-decoration: bold;
     float: right;
-    background-color: #3E3458;
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 12px;
   }
+
+  .link-dream {
+    color: #fff;
+    font-size: 21px,
+    text-decortion: bold;
+    float: left;
+    text-align: left;
+    margin-right: 12px;
+  }
+
+  .dream-text {
+    font-size: 22px;
+    padding-top: 22px;
+  }
+
+  #dashboard {
+    margin-top: 125px;
+    color: white;
+  }
+
+  #blog {
+    margin-top: 130px;
+    color: white;
+  }
+
+  .blog-link {
+    color: #fff;
+  }
+
+  
+
 </style>
 </head>
 <body>
+<div class="container-fluid">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col align-center dream-text">
+      <p>Dream it, write it, share it</p>
+        <% if current_user %>
+          <%= link_to 'Record a Dream', new_blog_path, :class => "link-dream" %> 
+          <%= link_to 'Dreams', blogs_path, :class => "link-dream" %> 
+        <% end %>
+      </div>
+      <div class="col">
+        <%= image_tag ("DreamBookLogo.png"), :class => "logo" %>
+      </div>
 
-<div class="jumbotron text-center">
-<h1 class="display-3">Dreamer Dashboard</h1>
-  <p>Dreamer: <%=  @user.username  %></p>
-  <nav class="navbar navbar-expand-sm bg-#3E3458 navbar-dark fixed-top">
-    <%= link_to 'Home', root_path, :class => "link" %> |
-    <% if current_user %>
-      <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %> |
-      <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %> |
-      <%= link_to 'Change Username', '/dashboard/update', :class => "link" %>
-      <%= link_to 'Record a Dream', new_blog_path %>
-      <%= link_to 'Dreams', blogs_path %>
-    <% end %>
-  </div>
-
-<div class="container-fluid p-4 my-3 border">
-  <div class="row">
-    <div class="col-sm-4">
-  <p><%= image_tag ("DreamBookLogo.png"), :class => "logo" %></p>
-    </div>
-
-
-    <div class="col-sm-8 text-white">
-      <h4>Blogs</h4><br><br>
-      <% @user_blogs.each do |blog| %>
-        <%= link_to "#{blog.title}", blog_path(blog.id) %>
-    <% end %>
+        <% if current_user %>
+          <%= link_to 'Home', root_path, :class => "link" %> 
+          <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %> 
+          <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %> 
+          <%= link_to 'Change Username', '/dashboard/update', :class => "link" %> 
+        <% end %>
     </div>
   </div>
 </div>
+
+<div class="col-sm-12 text-center" id="dashboard">
+  <h1>Dreamer Dashboard</h1>
+  <p>Dreamer: <%= @user.username %></p>
+</div>
+
+  
+
+<div class="col-sm-12 text-center" id="blog">
+  <h2>My Blogs</h2><br>
+  <% @user_blogs.each do |blog| %>
+    <p><%= link_to "#{blog.title}", blog_path(blog.id), :class => "blog-link"%></p>
+  <% end %>
+</div>
+
