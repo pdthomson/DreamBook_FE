@@ -16,7 +16,7 @@ RSpec.describe 'Welcome page' do
                           })
   end
 
-  it 'has a home link that redirects to welcome page' do
+  it 'has a home link that redirects to welcome page', :vcr do
     visit root_path
     expect(page).to have_link('Home')
     click_on 'Home'
