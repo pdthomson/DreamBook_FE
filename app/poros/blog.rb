@@ -4,7 +4,8 @@ class Blog
               :status,
               :user_id,
               :id,
-              :keyword
+              :keyword,
+              :created_at
 
   def initialize(data)
     @id = data[:id].to_i
@@ -13,5 +14,6 @@ class Blog
     @status = data[:attributes][:status]
     @user_id = data[:attributes][:user_id]
     @keyword = data[:attributes][:keyword]
+    @created_at = data[:attributes][:created_at]
   end
 end
