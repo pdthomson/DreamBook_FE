@@ -1,64 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/facades/searched_movie_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          20,
-          null,
-          21,
-          1,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/services/searched_movie_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/searched_movie.rb": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/searched_book.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          20,
-          20,
-          20,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -74,6 +25,34 @@
       },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/models/user.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/facades/searched_movie_facade.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -144,6 +123,21 @@
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/searched_movie.rb": {
+        "lines": [
+          0,
+          0,
+          null,
           0,
           0,
           0,
@@ -456,8 +450,33 @@
         ],
         "branches": {
         }
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/services/searched_movie_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1663780683
+    "timestamp": 1663781039
   }
 }
