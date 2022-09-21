@@ -1,25 +1,64 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/facades/searched_book_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100,
+          null,
+          101,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/services/searched_book_service.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
+          2,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           null,
           1,
           1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/searched_book.rb": {
+        "lines": [
+          1,
           1,
           null,
+          1,
+          100,
+          100,
+          100,
           null,
           null
         ]
@@ -162,21 +201,6 @@
         "lines": [
           0,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/bryce.simonds/Desktop/turing/3Module/projects/consultancy/DreamBook_FE/app/poros/searched_book.rb": {
-        "lines": [
-          0,
           0,
           null,
           0,
@@ -502,6 +526,6 @@
         }
       }
     },
-    "timestamp": 1663781233
+    "timestamp": 1663781707
   }
 }
