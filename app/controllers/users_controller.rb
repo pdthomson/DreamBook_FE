@@ -11,9 +11,11 @@ class UsersController < ApplicationController
      keywords = @user_blogs.map do |blog|
        blog.keyword
      end
-     @movies = answer = []
-     keywords.each do |keyword|
-       answer << SearchedMovieFacade.two_movies_matching_searched_keyword(keyword)
+     @movies = keywords.map do |keyword|
+      SearchedMovieFacade.one_movie_matching_searched_keyword(keyword)
+     end
+     @books = keywords.map do |keyword|
+      SearchedBookFacade.one_book_matching_searched_keyword(keyword)
      end
      if current_user.nil?
        redirect_to root_path

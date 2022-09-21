@@ -1,6 +1,6 @@
 class SearchedMovieFacade
   class << self
-    def two_movies_matching_searched_keyword(keyword)
+    def one_movie_matching_searched_keyword(keyword)
       if SearchedMovieService.get_all_keyword_matching_movies(keyword)[:data].blank?
         keyword = 'Hobbit'
         parsed_json = SearchedMovieService.get_all_keyword_matching_movies(keyword)
