@@ -91,9 +91,9 @@
 
         <% if current_user %>
           <%= link_to 'Home', root_path, :class => "link" %>
-          <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %>
           <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %>
           <%= link_to 'Change Username', '/dashboard/update', :class => "link" %>
+          <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %>
         <% end %>
     </div>
   </div>
@@ -103,8 +103,6 @@
   <h1>Dreamer Dashboard</h1>
   <p>Dreamer: <%= @user.username %></p>
 </div>
-
-
 
 <div class="col-sm-12 text-center" id="blog">
   <h2>My Blogs</h2><br>

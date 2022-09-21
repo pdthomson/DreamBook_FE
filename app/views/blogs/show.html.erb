@@ -1,65 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.5/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.5/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <style>
   .jumbotron {
+    max-height: 250px;
     background-color: #3E3458;
     color: #fff;
-    text-transform: uppercase;
   }
 
   .container {
     background-color: black;
     color: #fff;
-    font-weight: bold;
-    
   }
-
+ 
   body {
     background-color: black;
-    color: #fff;
-    font: 15px monaco, monospace;
-    
   }
-
-  .logo {
-    height: 45%;
-    width: 45%;
+ 
+  .logo { 
+    max-width: 525px; 
+    max-height: 525px;
+    padding-left: 50px;
+    padding-bottom: 200px;
   }
 
   .link {
     color: #fff;
-    font-size: medium;
+    font-size: 20px;
     text-decoration: bold;
     float: right;
-    background-color: #3E3458;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 12px;
   }
+
+  .dream {
+    text-align: center;
+    float: center;
+  }
+
+  #dream-blog {
+    margin-top: 125px;
+    color: white;
+  }
+
+  .dream-text {
+    font-size: 22px;
+    padding-top: 22px;
+  }
+
+  .update-delete-blog {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 12px;
+  }
+
+  .blog-text {
+    text-align: center;
+    padding-right: 45px;
+    margin-top: 65px;
+    color: #fff;
+  }
+
+  .blog-box {
+    background-color: #3E3458;
+    color: #fff;
+    padding-top: 100px;
+  }
+
 </style>
 </head>
 <body>
-
-<div class="jumbotron text-center">
-<h1 class="display-3"><%= @blog.title %></h1>
-  <nav class="navbar navbar-expand-sm bg-#3E3458 navbar-dark fixed-top">
-    <%= link_to 'Home', root_path, :class => "link" %> |
-    <% if current_user %>
-      <%= link_to ' Log out ', session_path(current_user.id), :class => "link", method: :delete %> |
-      <%= link_to ' Dreams ', blogs_path %>| 
-      <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get%>
-    <% end %>
-  </div>
-
-<div class="container-fluid p-4 my-3 border">
-  <div class="row">
-    <div class="col-sm-4">
-  <p><%= image_tag ("DreamBookLogo.png"), :class => "logo" %></p>
+<div class="container-fluid">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col align-center dream-text">
+        <p>Dream it, write it, share it</p>
+      </div>
+      <div class="col">
+        <%= image_tag ("DreamBookLogo.png"), :class => "logo" %>
+      </div>
+      <div class="col">
+          <% if current_user %>
+            <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete%>
+            <%= link_to 'Dreams', blogs_path, :class => "link" %>
+            <%= link_to 'Record a Dream', new_blog_path, :class => "link" %>
+            <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get%>
+          <% else %>
+            <%= link_to 'Log in/Register', '/auth/google_oauth2', :class => "link"%>
+          <% end %>
+            <%=link_to 'Home', root_path, :class => "link"%>
+      </div>
     </div>
+  </div> 
+<div class="container p-5 my-4 blog-box">
+  <div class="blog-text text-left"><br>
+    <h5>Title:</h5>
+    <h2><%= @blog.title %></h2><br>
+    <h5>Body:</h5>
+    </div>
+    <%= @blog.body %>
+    <br><br><br>
+    <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "update-delete-blog", method: :get %>
+    <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "update-delete-blog", method: :delete %>
+</div>
+  
+</div>
+
+
  <div class="body text-center"> <h3>"<%= @blog.body %>"</h3>
  <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "link", method: :get %>
  <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "link", method: :delete %>
