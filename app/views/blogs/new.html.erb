@@ -120,18 +120,10 @@ body {
     <br>
     <%= f.label :keyword %>:
     <%= f.text_field :keyword, :class => "field-boxes" %>
-    <br>
+    <br><br>
     <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.select :status, ['hidden', 'shared'], { } ,:class => "btn color-button" %>
     <br>
-    <div class="dropdown show">
-      <a class="btn color-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Blog Status
-      </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">Hidden</a>
-        <a class="dropdown-item" href="#">Shared</a>
-      </div>
-    </div>
     <br>
     <input class="btn btn-primary color-button btn-lg border border-dark" type="submit" value="Submit">
   <% end %>
