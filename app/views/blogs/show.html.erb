@@ -69,9 +69,12 @@
   }
 
   .blog-box {
-    background-color: #3E3458;
     color: #fff;
     padding-top: 100px;
+  }
+
+  .blog-comment {
+    padding-right: 100px;
   }
 
 </style>
@@ -99,42 +102,32 @@
       </div>
     </div>
   </div> 
-<div class="container p-5 my-4 blog-box">
-  <div class="blog-text text-left"><br>
-    <h5>Title:</h5>
-    <h2><%= @blog.title %></h2><br>
-    <h5>Body:</h5>
+  <div class="container p-5 my-4 blog-box">
+    <div class="blog-text text-left"><br>
+      <h5>Title:</h5>
+      <h2><%= @blog.title %></h2><br>
+      <h5>Body:</h5>
+      </div>
+      <%= @blog.body %>
+      <br><br>
+      <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "update-delete-blog", method: :get %>
+      <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "update-delete-blog", method: :delete %>  
+      <br><br>
+      <h5>Comments:</h5>
+      <% @comments[:data].each do |comment| %>
+        <p><%= comment[:attributes][:comment_text] %></p>
+      <% end %>
+
+  <div class="container text-center blog-comment" >
+    <h6>Add Comment</h6>
+      <div class="container text-center"> <%= form_with url: blog_comments_path(@blog.id), method: :post, local: true do |f|  %>
+      <%= f.label :comment_text %>:
+      <%= f.text_field :comment_text %>
+
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+      <%= f.hidden_field :blog_id, :value => @blog.id %>
+      <%= f.submit %>
+      <% end %>
     </div>
-    <%= @blog.body %>
-    <br><br><br>
-    <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "update-delete-blog", method: :get %>
-    <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "update-delete-blog", method: :delete %>
-</div>
-  
-</div>
-
-
- <div class="body text-center"> <h3>"<%= @blog.body %>"</h3>
- <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "link", method: :get %>
- <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "link", method: :delete %>
- <br>
- </div>
-
-<h5 class="container text-right"> Comments: </h5>
-<h6 class="container text-right"> <% @comments[:data].each do |comment| %>
-"<%= comment[:attributes][:comment_text] %>"
-  <br><br><br>
-<% end %>
-</h6>
-
-<br><br><br><br><br><br>
- <h6 class="container text-center">Add Comment</h6>
-<div class="container text-center"> <%= form_with url: blog_comments_path(@blog.id), method: :post, local: true do |f|  %>
-  <%= f.label :comment_text %>:
-  <%= f.text_field :comment_text %>
-
-  <%= f.hidden_field :user_id, :value => current_user.id %>
-  <%= f.hidden_field :blog_id, :value => @blog.id %>
-  <%= f.submit %>
-<% end %>
+  </div> 
 </div>
