@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/blogs/6
+    uri: http://localhost:5000/api/v1/blogs
     body:
       encoding: US-ASCII
       string: ''
@@ -21,26 +21,260 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cb7b6edb42cf5836a49175d271eab983"
+      - W/"8cce76b1b6ff34025c6a41ff7c7f60ab"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 698c43fe-97a1-4c88-be7c-ed21eba7399c
+      - 5dc85092-1daf-48d9-8896-4b0d150a17f8
       X-Runtime:
-      - '0.002642'
+      - '0.004113'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6","type":"blog","attributes":{"title":"Exotic Colors","body":"all
-        of my dreams have vibrant colors","status":"shared","user_id":2}}}'
-  recorded_at: Tue, 20 Sep 2022 13:53:18 GMT
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"Roads go ever, ever on","status":"shared","user_id":132}},{"id":"5","type":"blog","attributes":{"title":"Mother
+        Night","body":"Through Rohan Over Fen and Field Where the Long Grass Grows","status":"shared","user_id":204}},{"id":"6","type":"blog","attributes":{"title":"No
+        Country for Old Men","body":"When evening in the Shire was grey","status":"shared","user_id":216}},{"id":"7","type":"blog","attributes":{"title":"Endless
+        Night","body":"All That Is Gold Does Not Glitter","status":"shared","user_id":228}},{"id":"8","type":"blog","attributes":{"title":"Death
+        Be Not Proud","body":"Old fat spider spinning in a tree!","status":"shared","user_id":240}},{"id":"9","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":245}},{"id":"10","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"12","type":"blog","attributes":{"title":"The
+        Way of All Flesh","body":"An Elven-maid there was of old","status":"shared","user_id":251}},{"id":"13","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":259}},{"id":"14","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"15","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"16","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Roads go ever, ever on","status":"shared","user_id":310}},{"id":"17","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":318}},{"id":"18","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"19","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"20","type":"blog","attributes":{"title":"Butter
+        In a Lordly Dish","body":"Hey! Now! Come Hoy Now! Whither Do You Wander?","status":"shared","user_id":326}},{"id":"21","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":334}},{"id":"22","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"23","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"24","type":"blog","attributes":{"title":"Pale
+        Kings and Princes","body":"O Orofarne Lassemista, Carnimirie!","status":"shared","user_id":343}},{"id":"25","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":351}},{"id":"26","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"27","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"28","type":"blog","attributes":{"title":"The
+        Glory and the Dream","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":356}},{"id":"29","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":364}},{"id":"30","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"31","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"32","type":"blog","attributes":{"title":"Recalled
+        to Life","body":"I sit beside the fire and think","status":"shared","user_id":369}},{"id":"33","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":377}},{"id":"34","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"35","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"36","type":"blog","attributes":{"title":"Frequent
+        Hearses","body":"Where now the horse and the rider?","status":"shared","user_id":396}},{"id":"37","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":405}},{"id":"38","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"39","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"40","type":"blog","attributes":{"title":"If
+        I Forget Thee Jerusalem","body":"Ho! Tom Bombadil, Tom Bombadillo!","status":"shared","user_id":410}},{"id":"41","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":419}},{"id":"42","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"43","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"44","type":"blog","attributes":{"title":"Paths
+        of Glory","body":"Under the mountain dark and tall","status":"shared","user_id":424}},{"id":"45","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":433}},{"id":"46","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"47","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"48","type":"blog","attributes":{"title":"The
+        Last Enemy","body":"Snow-white! Snow-white! O Lady Clear!","status":"shared","user_id":438}}]}'
+  recorded_at: Tue, 20 Sep 2022 23:40:20 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8cce76b1b6ff34025c6a41ff7c7f60ab"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8f4b0802-f0cf-453e-9d3e-0535521c1c22
+      X-Runtime:
+      - '0.005334'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"That
+        Hideous Strength","body":"Roads go ever, ever on","status":"shared","user_id":132}},{"id":"5","type":"blog","attributes":{"title":"Mother
+        Night","body":"Through Rohan Over Fen and Field Where the Long Grass Grows","status":"shared","user_id":204}},{"id":"6","type":"blog","attributes":{"title":"No
+        Country for Old Men","body":"When evening in the Shire was grey","status":"shared","user_id":216}},{"id":"7","type":"blog","attributes":{"title":"Endless
+        Night","body":"All That Is Gold Does Not Glitter","status":"shared","user_id":228}},{"id":"8","type":"blog","attributes":{"title":"Death
+        Be Not Proud","body":"Old fat spider spinning in a tree!","status":"shared","user_id":240}},{"id":"9","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":245}},{"id":"10","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"12","type":"blog","attributes":{"title":"The
+        Way of All Flesh","body":"An Elven-maid there was of old","status":"shared","user_id":251}},{"id":"13","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":259}},{"id":"14","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"15","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"16","type":"blog","attributes":{"title":"Dulce
+        et Decorum Est","body":"Roads go ever, ever on","status":"shared","user_id":310}},{"id":"17","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":318}},{"id":"18","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"19","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"20","type":"blog","attributes":{"title":"Butter
+        In a Lordly Dish","body":"Hey! Now! Come Hoy Now! Whither Do You Wander?","status":"shared","user_id":326}},{"id":"21","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":334}},{"id":"22","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"23","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"24","type":"blog","attributes":{"title":"Pale
+        Kings and Princes","body":"O Orofarne Lassemista, Carnimirie!","status":"shared","user_id":343}},{"id":"25","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":351}},{"id":"26","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"27","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"28","type":"blog","attributes":{"title":"The
+        Glory and the Dream","body":"Sing now, ye people of the Tower of Anor","status":"shared","user_id":356}},{"id":"29","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":364}},{"id":"30","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"31","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"32","type":"blog","attributes":{"title":"Recalled
+        to Life","body":"I sit beside the fire and think","status":"shared","user_id":369}},{"id":"33","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":377}},{"id":"34","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"35","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"36","type":"blog","attributes":{"title":"Frequent
+        Hearses","body":"Where now the horse and the rider?","status":"shared","user_id":396}},{"id":"37","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":405}},{"id":"38","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"39","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"40","type":"blog","attributes":{"title":"If
+        I Forget Thee Jerusalem","body":"Ho! Tom Bombadil, Tom Bombadillo!","status":"shared","user_id":410}},{"id":"41","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":419}},{"id":"42","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"43","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"44","type":"blog","attributes":{"title":"Paths
+        of Glory","body":"Under the mountain dark and tall","status":"shared","user_id":424}},{"id":"45","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":433}},{"id":"46","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"47","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"48","type":"blog","attributes":{"title":"The
+        Last Enemy","body":"Snow-white! Snow-white! O Lady Clear!","status":"shared","user_id":438}}]}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36d9ac1df5c93b46ec4c3e84772a714e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e022e733-47b2-443e-bb17-d88d9d7ca8bc
+      X-Runtime:
+      - '0.001791'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36d9ac1df5c93b46ec4c3e84772a714e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 813a3aa0-54a4-4bff-85a6-88b1ee628263
+      X-Runtime:
+      - '0.001836'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36d9ac1df5c93b46ec4c3e84772a714e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5c892059-9761-454a-9d61-b2a43f414107
+      X-Runtime:
+      - '0.001801'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
 - request:
     method: post
     uri: http://localhost:5000/api/v1/blogs/1/comments
     body:
       encoding: UTF-8
-      string: '{"comment_text":"Fair Stood the Wind for France","blog_id":"1","user_id":"197"}'
+      string: '{"comment_text":"Tiger! Tiger!","blog_id":"1","user_id":"442"}'
     headers:
       User-Agent:
       - Faraday v2.5.2
@@ -58,20 +292,55 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"80a76b45f1d3eed475d74ac11dc60650"
+      - W/"11e8add31ac0951609706ebc190a4076"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3136ac92-31b8-41ce-a37c-8e33f89ed755
+      - 831d91ad-284f-4f04-9b00-dcffecc3510a
       X-Runtime:
-      - '0.007373'
+      - '0.005171'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"44","type":"comment","attributes":{"user_id":197,"blog_id":1,"comment_text":"Fair
-        Stood the Wind for France"}}}'
-  recorded_at: Tue, 20 Sep 2022 18:13:06 GMT
+      string: '{"data":{"id":"15","type":"comment","attributes":{"user_id":442,"blog_id":1,"comment_text":"Tiger!
+        Tiger!"}}}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36d9ac1df5c93b46ec4c3e84772a714e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e382720-d816-486c-abdf-19add52c86a4
+      X-Runtime:
+      - '0.001893'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/blogs/1/comments
@@ -93,271 +362,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cfaa8bf952fd3692888c76e02bdb549f"
+      - W/"9b8acb838bd035e3d46a5072412c67f9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 44906d48-1d69-472e-ba67-040c26c9f6e5
+      - 851ac158-b592-42d8-a6b1-5cb9f2655b5f
       X-Runtime:
-      - '0.003846'
+      - '0.002886'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"comment","attributes":{"user_id":2,"blog_id":1,"comment_text":"sounds
         like a nighmare!"}},{"id":"2","type":"comment","attributes":{"user_id":3,"blog_id":1,"comment_text":"thats
-        happened to me too!"}},{"id":"20","type":"comment","attributes":{"user_id":18,"blog_id":1,"comment_text":"No
-        Highway"}},{"id":"27","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"yep!"}},{"id":"28","type":"comment","attributes":{"user_id":1,"blog_id":1,"comment_text":"sgs"}},{"id":"29","type":"comment","attributes":{"user_id":12,"blog_id":1,"comment_text":"Cover
-        Her Face"}},{"id":"34","type":"comment","attributes":{"user_id":95,"blog_id":1,"comment_text":"A
-        Swiftly Tilting Planet"}},{"id":"36","type":"comment","attributes":{"user_id":112,"blog_id":1,"comment_text":"The
-        Millstone"}},{"id":"40","type":"comment","attributes":{"user_id":163,"blog_id":1,"comment_text":"Ego
-        Dominus Tuus"}},{"id":"42","type":"comment","attributes":{"user_id":180,"blog_id":1,"comment_text":"The
-        Last Temptation"}},{"id":"44","type":"comment","attributes":{"user_id":197,"blog_id":1,"comment_text":"Fair
-        Stood the Wind for France"}}]}'
-  recorded_at: Tue, 20 Sep 2022 18:13:06 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"75b9245a5600a63fbee2231dd68a264a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1414bfb1-bdbb-4261-95a7-4ae45fa2fe8b
-      X-Runtime:
-      - '0.003172'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"Code Dream","body":"Had
-        a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
-  recorded_at: Tue, 20 Sep 2022 20:30:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"75b9245a5600a63fbee2231dd68a264a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d285781a-d6b7-4a3a-829f-d8c3a88d2d0d
-      X-Runtime:
-      - '0.016558'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"Code Dream","body":"Had
-        a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
-  recorded_at: Tue, 20 Sep 2022 20:31:18 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"75b9245a5600a63fbee2231dd68a264a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a7610225-3fec-4367-b64f-f19c044825d4
-      X-Runtime:
-      - '0.013979'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"Code Dream","body":"Had
-        a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
-  recorded_at: Tue, 20 Sep 2022 20:32:21 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"71c7b6a2b168db9ae69ece7fa38003c4"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 0da1e8fa-5d74-46ad-8935-926da0767a4b
-      X-Runtime:
-      - '0.005904'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjMiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiNCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6ImRyZWFtIGFib3V0IGNvZGUiLCJib2R5IjoiaGFzIGEgZHJlYW0gYWJvdXQgY29kZSB0aGF0IGNhbiBmaXggYSBidWcgYW5kIGl0IHdvcmtlZCEiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjUiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJGbHlpbmcgY2F0cyIsImJvZHkiOiJhIGRyZWFtIHdoZXJlIGNhdHMgd2VyZSBmbHlpbmciLCJzdGF0dXMiOiJoaWRkZW4iLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiNyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6ImRyZWFtIGFib3V0IGNvZGUiLCJib2R5IjoiaGFzIGEgZHJlYW0gYWJvdXQgY29kZSB0aGF0IGNhbiBmaXggYSBidWcgYW5kIGl0IHdvcmtlZCEiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJGbHlpbmcgY2F0cyIsImJvZHkiOiJhIGRyZWFtIHdoZXJlIGNhdHMgd2VyZSBmbHlpbmciLCJzdGF0dXMiOiJoaWRkZW4iLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxMSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBjYXRzIiwiYm9keSI6ImEgZHJlYW0gd2hlcmUgY2F0cyB3ZXJlIGZseWluZyIsInN0YXR1cyI6ImhpZGRlbiIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMTIiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTMiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxNCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBjYXRzIiwiYm9keSI6ImEgZHJlYW0gd2hlcmUgY2F0cyB3ZXJlIGZseWluZyIsInN0YXR1cyI6ImhpZGRlbiIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMTUiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxNyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBjYXRzIiwiYm9keSI6ImEgZHJlYW0gd2hlcmUgY2F0cyB3ZXJlIGZseWluZyIsInN0YXR1cyI6ImhpZGRlbiIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMTgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUbyBhIEdvZCBVbmtub3duIiwiYm9keSI6IldoZXJlIG5vdyBhcmUgdGhlIER1bmVkYWluLCBFbGVzc2FyLCBFbGVzc2FyPyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMjAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6OH19LHsiaWQiOiIyMSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyMiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyMyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRoZSBTdGFycycgVGVubmlzIEJhbGxzIiwiYm9keSI6IkFpISBsYXVyacOrIGxhbnRhciBsYXNzaSBzw7pyaW5lbiAoTmFtw6FyacOrKSIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjE2fX0seyJpZCI6IjI0IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIzfX0seyJpZCI6IjI1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjI2IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjI3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIFdpZGVuaW5nIEd5cmUiLCJib2R5IjoiTG9uZyBMaXN0IG9mIHRoZSBFbnRzIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6OX19LHsiaWQiOiIyOCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxN319LHsiaWQiOiIyOSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzMCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzMSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZyZXF1ZW50IEhlYXJzZXMiLCJib2R5IjoiSSBzYW5nIG9mIGxlYXZlcywgb2YgbGVhdmVzIG9mIGdvbGQgKEdhbGFkcmllbCdzIFNvbmcgb2YgRWxkYW1hcikiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyNX19LHsiaWQiOiIzMiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzMyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzNCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkxldCBVcyBOb3cgUHJhaXNlIEZhbW91cyBNZW4iLCJib2R5IjoiU2lsdmVyIGZsb3cgdGhlIHN0cmVhbXMgZnJvbSBDZWxvcyB0byBFcnVpIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6NDF9fSx7ImlkIjoiMzUiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMzYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMzciLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTWlycm9yIENyYWNrJ2QgZnJvbSBTaWRlIHRvIFNpZGUiLCJib2R5IjoiQSBFbGJlcmV0aCBHaWx0aG9uaWVsIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6NzR9fSx7ImlkIjoiMzgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6ODN9fSx7ImlkIjoiMzkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNDAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNDEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJNb3RoZXIgTmlnaHQiLCJib2R5IjoiUm9sbC1Sb2xsLVJvbGwtUm9sbCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjkxfX0seyJpZCI6IjQyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjEwMH19LHsiaWQiOiI0MyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI0NCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI0NSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkJ1dHRlciBJbiBhIExvcmRseSBEaXNoIiwiYm9keSI6IlJvbGwtUm9sbC1Sb2xsLVJvbGwiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxMDh9fSx7ImlkIjoiNDYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTE3fX0seyJpZCI6IjQ3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjQ4IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjQ5IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjUwIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjUxIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIE5lZWRsZSdzIEV5ZSIsImJvZHkiOiJBIEVsYmVyZXRoIEdpbHRob25pZWwiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxNDJ9fSx7ImlkIjoiNTIiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTUxfX0seyJpZCI6IjUzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjU0IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjU1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIFdlYWx0aCBvZiBOYXRpb25zIiwiYm9keSI6IkFpISBsYXVyacOrIGxhbnRhciBsYXNzaSBzw7pyaW5lbiAoTmFtw6FyacOrKSIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjE1OX19LHsiaWQiOiI1NiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxNjh9fSx7ImlkIjoiNTciLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNTgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNTkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJOZWN0YXIgaW4gYSBTaWV2ZSIsImJvZHkiOiJBbiBFbHZlbi1tYWlkIHRoZXJlIHdhcyBvZiBvbGQiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxNzZ9fSx7ImlkIjoiNjAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTg1fX0seyJpZCI6IjYxIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjYyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjYzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiU29tZSBCdXJpZWQgQ2Flc2FyIiwiYm9keSI6IlRocm91Z2ggUm9oYW4gT3ZlciBGZW4gYW5kIEZpZWxkIFdoZXJlIHRoZSBMb25nIEdyYXNzIEdyb3dzIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTkzfX0seyJpZCI6IjY0IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIwMn19LHsiaWQiOiI2NSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI2NiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiQ29kZSBEcmVhbSIsImJvZHkiOiJIYWQgYSBkcmVhbSBhYm91dCBjb2RlIHRoYXQgY2FuIGZpeCBhIGJ1ZyBhbmQgaXQgd29ya2VkISIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBwdXJwbGUgY2F0cyIsImJvZHkiOiJBIERyZWFtIHdoZXJlIGNhdHMgd2VyZSBmbHlpbmcgYW5kIHdlcmUgcHVycGxlIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI2NyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRoZSBNaWxsc3RvbmUiLCJib2R5IjoiV2hlbiBTcHJpbmcgdW5mb2xkcyB0aGUgYmVlY2hlbiBsZWFmLCBhbmQgc2FwIGlzIGluIHRoZSBib3VnaCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIyN319LHsiaWQiOiI2OCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyMzZ9fSx7ImlkIjoiNjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNzAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNzEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTGl0dGxlIEZveGVzIiwiYm9keSI6IkFyaXNlLCBhcmlzZSwgUmlkZXJzIG9mIFRoZW9kZW4hIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjQ0fX0seyJpZCI6IjcyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI1M319LHsiaWQiOiI3MyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3NCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3NSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkdyZWF0IFdvcmsgb2YgVGltZSIsImJvZHkiOiJUaGUgQmF0aCBTb25nIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjYxfX0seyJpZCI6Ijc2IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI3MH19LHsiaWQiOiI3NyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3OCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3OSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRoZSBMaW5lIG9mIEJlYXV0eSIsImJvZHkiOiJGcm9tIGRhcmsgRHVuaGFycm93IGluIHRoZSBkaW0gbW9ybmluZyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI3OH19LHsiaWQiOiI4MCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyODd9fSx7ImlkIjoiODEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiODIiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiODMiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJEb3duIHRvIGEgU3VubGVzcyBTZWEiLCJib2R5IjoiSGV5ISBOb3chIENvbWUgSG95IE5vdyEgV2hpdGhlciBEbyBZb3UgV2FuZGVyPyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI5NX19XX0=
-  recorded_at: Tue, 20 Sep 2022 20:33:19 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"71c7b6a2b168db9ae69ece7fa38003c4"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 7ed6ed26-55c5-46db-a514-c3013ac26fbc
-      X-Runtime:
-      - '0.014238'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjMiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiNCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6ImRyZWFtIGFib3V0IGNvZGUiLCJib2R5IjoiaGFzIGEgZHJlYW0gYWJvdXQgY29kZSB0aGF0IGNhbiBmaXggYSBidWcgYW5kIGl0IHdvcmtlZCEiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjUiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJGbHlpbmcgY2F0cyIsImJvZHkiOiJhIGRyZWFtIHdoZXJlIGNhdHMgd2VyZSBmbHlpbmciLCJzdGF0dXMiOiJoaWRkZW4iLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiNyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6ImRyZWFtIGFib3V0IGNvZGUiLCJib2R5IjoiaGFzIGEgZHJlYW0gYWJvdXQgY29kZSB0aGF0IGNhbiBmaXggYSBidWcgYW5kIGl0IHdvcmtlZCEiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJGbHlpbmcgY2F0cyIsImJvZHkiOiJhIGRyZWFtIHdoZXJlIGNhdHMgd2VyZSBmbHlpbmciLCJzdGF0dXMiOiJoaWRkZW4iLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxMSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBjYXRzIiwiYm9keSI6ImEgZHJlYW0gd2hlcmUgY2F0cyB3ZXJlIGZseWluZyIsInN0YXR1cyI6ImhpZGRlbiIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMTIiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTMiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxNCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBjYXRzIiwiYm9keSI6ImEgZHJlYW0gd2hlcmUgY2F0cyB3ZXJlIGZseWluZyIsInN0YXR1cyI6ImhpZGRlbiIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMTUiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJkcmVhbSBhYm91dCBjb2RlIiwiYm9keSI6ImhhcyBhIGRyZWFtIGFib3V0IGNvZGUgdGhhdCBjYW4gZml4IGEgYnVnIGFuZCBpdCB3b3JrZWQhIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxNyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBjYXRzIiwiYm9keSI6ImEgZHJlYW0gd2hlcmUgY2F0cyB3ZXJlIGZseWluZyIsInN0YXR1cyI6ImhpZGRlbiIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMTgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJFeG90aWMgQ29sb3JzIiwiYm9keSI6ImFsbCBvZiBteSBkcmVhbXMgaGF2ZSB2aWJyYW50IGNvbG9ycyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjJ9fSx7ImlkIjoiMTkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUbyBhIEdvZCBVbmtub3duIiwiYm9keSI6IldoZXJlIG5vdyBhcmUgdGhlIER1bmVkYWluLCBFbGVzc2FyLCBFbGVzc2FyPyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMjAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6OH19LHsiaWQiOiIyMSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyMiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIyMyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRoZSBTdGFycycgVGVubmlzIEJhbGxzIiwiYm9keSI6IkFpISBsYXVyacOrIGxhbnRhciBsYXNzaSBzw7pyaW5lbiAoTmFtw6FyacOrKSIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjE2fX0seyJpZCI6IjI0IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIzfX0seyJpZCI6IjI1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjI2IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjI3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIFdpZGVuaW5nIEd5cmUiLCJib2R5IjoiTG9uZyBMaXN0IG9mIHRoZSBFbnRzIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6OX19LHsiaWQiOiIyOCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxN319LHsiaWQiOiIyOSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzMCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzMSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZyZXF1ZW50IEhlYXJzZXMiLCJib2R5IjoiSSBzYW5nIG9mIGxlYXZlcywgb2YgbGVhdmVzIG9mIGdvbGQgKEdhbGFkcmllbCdzIFNvbmcgb2YgRWxkYW1hcikiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyNX19LHsiaWQiOiIzMiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzMyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIzNCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkxldCBVcyBOb3cgUHJhaXNlIEZhbW91cyBNZW4iLCJib2R5IjoiU2lsdmVyIGZsb3cgdGhlIHN0cmVhbXMgZnJvbSBDZWxvcyB0byBFcnVpIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6NDF9fSx7ImlkIjoiMzUiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMzYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMzciLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTWlycm9yIENyYWNrJ2QgZnJvbSBTaWRlIHRvIFNpZGUiLCJib2R5IjoiQSBFbGJlcmV0aCBHaWx0aG9uaWVsIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6NzR9fSx7ImlkIjoiMzgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6ODN9fSx7ImlkIjoiMzkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNDAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNDEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJNb3RoZXIgTmlnaHQiLCJib2R5IjoiUm9sbC1Sb2xsLVJvbGwtUm9sbCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjkxfX0seyJpZCI6IjQyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjEwMH19LHsiaWQiOiI0MyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI0NCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI0NSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkJ1dHRlciBJbiBhIExvcmRseSBEaXNoIiwiYm9keSI6IlJvbGwtUm9sbC1Sb2xsLVJvbGwiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxMDh9fSx7ImlkIjoiNDYiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTE3fX0seyJpZCI6IjQ3IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjQ4IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjQ5IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjUwIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjUxIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIE5lZWRsZSdzIEV5ZSIsImJvZHkiOiJBIEVsYmVyZXRoIEdpbHRob25pZWwiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxNDJ9fSx7ImlkIjoiNTIiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTUxfX0seyJpZCI6IjUzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjU0IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjU1IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGhlIFdlYWx0aCBvZiBOYXRpb25zIiwiYm9keSI6IkFpISBsYXVyacOrIGxhbnRhciBsYXNzaSBzw7pyaW5lbiAoTmFtw6FyacOrKSIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjE1OX19LHsiaWQiOiI1NiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxNjh9fSx7ImlkIjoiNTciLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNTgiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNTkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJOZWN0YXIgaW4gYSBTaWV2ZSIsImJvZHkiOiJBbiBFbHZlbi1tYWlkIHRoZXJlIHdhcyBvZiBvbGQiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxNzZ9fSx7ImlkIjoiNjAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUZXN0IiwiYm9keSI6IlRoaXMgaXMgYSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTg1fX0seyJpZCI6IjYxIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjYyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoidGVzdGluZyIsImJvZHkiOiJib2R5IHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoxfX0seyJpZCI6IjYzIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiU29tZSBCdXJpZWQgQ2Flc2FyIiwiYm9keSI6IlRocm91Z2ggUm9oYW4gT3ZlciBGZW4gYW5kIEZpZWxkIFdoZXJlIHRoZSBMb25nIEdyYXNzIEdyb3dzIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MTkzfX0seyJpZCI6IjY0IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIwMn19LHsiaWQiOiI2NSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI2NiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiIxIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiQ29kZSBEcmVhbSIsImJvZHkiOiJIYWQgYSBkcmVhbSBhYm91dCBjb2RlIHRoYXQgY2FuIGZpeCBhIGJ1ZyBhbmQgaXQgd29ya2VkISIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiMiIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkZseWluZyBwdXJwbGUgY2F0cyIsImJvZHkiOiJBIERyZWFtIHdoZXJlIGNhdHMgd2VyZSBmbHlpbmcgYW5kIHdlcmUgcHVycGxlIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI2NyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRoZSBNaWxsc3RvbmUiLCJib2R5IjoiV2hlbiBTcHJpbmcgdW5mb2xkcyB0aGUgYmVlY2hlbiBsZWFmLCBhbmQgc2FwIGlzIGluIHRoZSBib3VnaCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjIyN319LHsiaWQiOiI2OCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyMzZ9fSx7ImlkIjoiNjkiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNzAiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiNzEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJUaGUgTGl0dGxlIEZveGVzIiwiYm9keSI6IkFyaXNlLCBhcmlzZSwgUmlkZXJzIG9mIFRoZW9kZW4hIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjQ0fX0seyJpZCI6IjcyIiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI1M319LHsiaWQiOiI3MyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3NCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3NSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IkdyZWF0IFdvcmsgb2YgVGltZSIsImJvZHkiOiJUaGUgQmF0aCBTb25nIiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MjYxfX0seyJpZCI6Ijc2IiwidHlwZSI6ImJsb2ciLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiVGVzdCIsImJvZHkiOiJUaGlzIGlzIGEgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI3MH19LHsiaWQiOiI3NyIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3OCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6InRlc3RpbmciLCJib2R5IjoiYm9keSB0ZXN0Iiwic3RhdHVzIjoic2hhcmVkIiwidXNlcl9pZCI6MX19LHsiaWQiOiI3OSIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRoZSBMaW5lIG9mIEJlYXV0eSIsImJvZHkiOiJGcm9tIGRhcmsgRHVuaGFycm93IGluIHRoZSBkaW0gbW9ybmluZyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI3OH19LHsiaWQiOiI4MCIsInR5cGUiOiJibG9nIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlRlc3QiLCJib2R5IjoiVGhpcyBpcyBhIHRlc3QiLCJzdGF0dXMiOiJzaGFyZWQiLCJ1c2VyX2lkIjoyODd9fSx7ImlkIjoiODEiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiODIiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJ0ZXN0aW5nIiwiYm9keSI6ImJvZHkgdGVzdCIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjF9fSx7ImlkIjoiODMiLCJ0eXBlIjoiYmxvZyIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJEb3duIHRvIGEgU3VubGVzcyBTZWEiLCJib2R5IjoiSGV5ISBOb3chIENvbWUgSG95IE5vdyEgV2hpdGhlciBEbyBZb3UgV2FuZGVyPyIsInN0YXR1cyI6InNoYXJlZCIsInVzZXJfaWQiOjI5NX19XX0=
-  recorded_at: Tue, 20 Sep 2022 20:33:20 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"75b9245a5600a63fbee2231dd68a264a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - '09dd9f02-0e75-4caf-a43d-2a315e7b038b'
-      X-Runtime:
-      - '0.001811'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"blog","attributes":{"title":"Code Dream","body":"Had
-        a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}}}'
-  recorded_at: Tue, 20 Sep 2022 20:33:20 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/blogs/3
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"3758632f81f4dbf7512cf32b658680db"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 558125e8-f472-42d2-82d3-cb7a1199e8b0
-      X-Runtime:
-      - '0.002558'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"3","type":"blog","attributes":{"title":"Exotic Colors","body":"all
-        of my dreams have vibrant colors","status":"shared","user_id":2}}}'
-  recorded_at: Tue, 20 Sep 2022 20:33:20 GMT
+        happened to me too!"}},{"id":"9","type":"comment","attributes":{"user_id":400,"blog_id":1,"comment_text":"In
+        Death Ground"}},{"id":"11","type":"comment","attributes":{"user_id":414,"blog_id":1,"comment_text":"That
+        Hideous Strength"}},{"id":"13","type":"comment","attributes":{"user_id":428,"blog_id":1,"comment_text":"A
+        Summer Bird-Cage"}},{"id":"15","type":"comment","attributes":{"user_id":442,"blog_id":1,"comment_text":"Tiger!
+        Tiger!"}}]}'
+  recorded_at: Tue, 20 Sep 2022 23:40:21 GMT
 recorded_with: VCR 6.1.0
