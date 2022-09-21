@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b9f66f59f78721b1a3d405eb69283520"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e3a23bca-cbdd-4a9e-8f7f-13cf50385273
+      X-Runtime:
+      - '0.001928'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:04 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,261 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"680c91a025f9074ba591d796c698d4c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 00d87135-33e1-4755-9a61-2327b54be5ca
+      X-Runtime:
+      - '0.002038'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:05 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"680c91a025f9074ba591d796c698d4c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e73a6b24-d13e-453b-b5c2-67d0dd1b4ba4
+      X-Runtime:
+      - '0.001836'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:05 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"680c91a025f9074ba591d796c698d4c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8afa46fd-1c5e-4007-9618-c04e35bb3e2a
+      X-Runtime:
+      - '0.001778'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:05 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"680c91a025f9074ba591d796c698d4c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - db483c26-94fd-40f9-a14e-176fd3a5a9b3
+      X-Runtime:
+      - '0.001837'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:05 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"680c91a025f9074ba591d796c698d4c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6d21cae1-ec69-4af8-a72c-ab2a1a913a24
+      X-Runtime:
+      - '0.002011'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:05 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"680c91a025f9074ba591d796c698d4c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ac83fa9f-8dbd-48e5-bfca-2150e0dc0b1e
+      X-Runtime:
+      - '0.001984'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:05 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,373 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs/196/comments
+    body:
+      encoding: UTF-8
+      string: '{"comment_text":"bts butter","blog_id":196,"user_id":734}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c9ab10927193912321ca4d7012022bc8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8b669eeb-a45b-4317-bb25-a3d1d12213e1
+      X-Runtime:
+      - '0.004881'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"73","type":"comment","attributes":{"user_id":734,"blog_id":196,"comment_text":"bts
+        butter"}}}'
+  recorded_at: Wed, 21 Sep 2022 15:07:37 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/196/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"658f73f00ef77b23802161318eaa3c42"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 020b6188-46bb-490f-a7b9-fec42b1d007d
+      X-Runtime:
+      - '0.002254'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"73","type":"comment","attributes":{"user_id":734,"blog_id":196,"comment_text":"bts
+        butter"}}]}'
+  recorded_at: Wed, 21 Sep 2022 15:07:37 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs/198/comments
+    body:
+      encoding: UTF-8
+      string: '{"comment_text":"bts butter","blog_id":198,"user_id":754}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9d59a29499f55507b062ed8f9e9d3c67"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f2e6f03b-7b9f-4f84-a030-fed9c477bcfc
+      X-Runtime:
+      - '0.009782'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"74","type":"comment","attributes":{"user_id":754,"blog_id":198,"comment_text":"bts
+        butter"}}}'
+  recorded_at: Wed, 21 Sep 2022 15:15:10 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/198/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8b42745a13fb27ff2d823a36f79318ea"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cdd34958-05a4-4fc0-9bfe-b5dc4e10d259
+      X-Runtime:
+      - '0.003311'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"74","type":"comment","attributes":{"user_id":754,"blog_id":198,"comment_text":"bts
+        butter"}}]}'
+  recorded_at: Wed, 21 Sep 2022 15:15:10 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs/205/comments
+    body:
+      encoding: UTF-8
+      string: '{"comment_text":"bts butter","blog_id":205,"user_id":774}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"65224e7d9786b9b8c4b1aa673b1e8b40"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4458dbfd-4b8a-422d-a47f-ccacd61e287d
+      X-Runtime:
+      - '0.013343'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"75","type":"comment","attributes":{"user_id":774,"blog_id":205,"comment_text":"bts
+        butter"}}}'
+  recorded_at: Wed, 21 Sep 2022 15:18:27 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/205/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"85c028423076bf042065342b3c48b49b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e9e7196-ccff-465c-ba0e-5fabb50cf4ad
+      X-Runtime:
+      - '0.003912'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"75","type":"comment","attributes":{"user_id":774,"blog_id":205,"comment_text":"bts
+        butter"}}]}'
+  recorded_at: Wed, 21 Sep 2022 15:18:27 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: UTF-8
+      string: '{"title":"testing","body":"body test","user_id":1,"status":"shared","keyword":null}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6d829c630d2a5afecb52978c6d7b7a0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d842c951-1b22-4360-ac24-383f0952432f
+      X-Runtime:
+      - '0.003237'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}}}'
+  recorded_at: Wed, 21 Sep 2022 18:41:06 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5d8bff96eb155daba8553bf0ef59a716"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 987745ad-f9fd-4ba7-96ee-0d6b648d53e5
+      X-Runtime:
+      - '0.001919'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}},{"id":"7","type":"blog","attributes":{"title":"Blue
+        Skies","body":"A relaxing dream about the sky","status":"shared","user_id":30}},{"id":"8","type":"blog","attributes":{"title":"Test","body":"This
+        is a test","status":"shared","user_id":36}},{"id":"9","type":"blog","attributes":{"title":"A
+        Farewell to Arms","body":"Ho! Ho! Ho! To the Bottle I Go","status":"shared","user_id":37}},{"id":"10","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}},{"id":"11","type":"blog","attributes":{"title":"testing","body":"body
+        test","status":"shared","user_id":1}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:06 GMT
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/blogs/11/comments
+    body:
+      encoding: UTF-8
+      string: '{"comment_text":"bts butter","blog_id":11,"user_id":44}'
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e6b52f8d30af45261d47bf48a9ec39de"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ae40f21d-65d8-4528-a40c-8a92a2d0d382
+      X-Runtime:
+      - '0.005689'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"comment","attributes":{"user_id":44,"blog_id":11,"comment_text":"bts
+        butter"}}}'
+  recorded_at: Wed, 21 Sep 2022 18:41:06 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/11/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0932588efa4d116468f7b86f6516a222"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aa242463-ed42-4593-9e70-6375adfd17ab
+      X-Runtime:
+      - '0.013585'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"comment","attributes":{"user_id":44,"blog_id":11,"comment_text":"bts
+        butter"}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:06 GMT
+recorded_with: VCR 6.1.0

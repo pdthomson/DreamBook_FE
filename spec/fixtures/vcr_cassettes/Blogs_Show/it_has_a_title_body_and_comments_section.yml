@@ -1,0 +1,193 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b9f66f59f78721b1a3d405eb69283520"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e318a8b3-2692-4f8b-b775-2f19fbcd63a6
+      X-Runtime:
+      - '0.001974'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:04 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b9f66f59f78721b1a3d405eb69283520"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 93e3983e-732e-464b-b11a-3ce9088b0125
+      X-Runtime:
+      - '0.017276'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:04 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b9f66f59f78721b1a3d405eb69283520"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9bb51c05-a8cd-44ff-a9df-f7b7d5669f27
+      X-Runtime:
+      - '0.004455'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"blog","attributes":{"title":"dream about
+        code","body":"has a dream about code that can fix a bug and it worked!","status":"shared","user_id":1}},{"id":"2","type":"blog","attributes":{"title":"Flying
+        cats","body":"a dream where cats were flying","status":"hidden","user_id":1}},{"id":"3","type":"blog","attributes":{"title":"Exotic
+        Colors","body":"all of my dreams have vibrant colors","status":"shared","user_id":2}},{"id":"4","type":"blog","attributes":{"title":"Zombies","body":"I
+        have a reoccurring dream about zombies! Each dream is different but about
+        zombies.\r\n","status":"shared","user_id":1}},{"id":"5","type":"blog","attributes":{"title":"The
+        Parliament of Man","body":"Hey dol! merry dol! ring a dong dillo!","status":"shared","user_id":25}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:04 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d56ce2118fdceb7da90626fe6b9bb3f4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5630648d-b3cf-494b-9075-29751cc4374d
+      X-Runtime:
+      - '0.096016'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"blog","attributes":{"title":"Flying cats","body":"a
+        dream where cats were flying","status":"hidden","user_id":1}}}'
+  recorded_at: Wed, 21 Sep 2022 18:41:04 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/blogs/2/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b11b2da6dcdd5bb14cb8d6ed7891e633"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7ad6f1e-b67c-400b-84a2-6d6402bdd06f
+      X-Runtime:
+      - '0.006736'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"3","type":"comment","attributes":{"user_id":1,"blog_id":2,"comment_text":"sounds
+        so pretty!"}}]}'
+  recorded_at: Wed, 21 Sep 2022 18:41:04 GMT
+recorded_with: VCR 6.1.0
