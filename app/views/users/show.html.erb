@@ -23,8 +23,8 @@
     background-color: black;
   }
 
-  .logo { 
-    max-width: 525px; 
+  .logo {
+    max-width: 525px;
     max-height: 525px;
     text: center;
     padding-top: 0px;
@@ -70,7 +70,7 @@
     color: #fff;
   }
 
-  
+
 
 </style>
 </head>
@@ -81,8 +81,8 @@
       <div class="col align-center dream-text">
       <p>Dream it, write it, share it</p>
         <% if current_user %>
-          <%= link_to 'Record a Dream', new_blog_path, :class => "link-dream" %> 
-          <%= link_to 'Dreams', blogs_path, :class => "link-dream" %> 
+          <%= link_to 'Record a Dream', new_blog_path, :class => "link-dream" %>
+          <%= link_to 'Dreams', blogs_path, :class => "link-dream" %>
         <% end %>
       </div>
       <div class="col">
@@ -90,10 +90,10 @@
       </div>
 
         <% if current_user %>
-          <%= link_to 'Home', root_path, :class => "link" %> 
-          <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %> 
-          <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %> 
-          <%= link_to 'Change Username', '/dashboard/update', :class => "link" %> 
+          <%= link_to 'Home', root_path, :class => "link" %>
+          <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %>
+          <%= link_to 'Delete Account', user_path(current_user.id), :class => "link", method: :delete %>
+          <%= link_to 'Change Username', '/dashboard/update', :class => "link" %>
         <% end %>
     </div>
   </div>
@@ -104,7 +104,7 @@
   <p>Dreamer: <%= @user.username %></p>
 </div>
 
-  
+
 
 <div class="col-sm-12 text-center" id="blog">
   <h2>My Blogs</h2><br>
@@ -113,3 +113,7 @@
   <% end %>
 </div>
 
+<% @movies.each do |movie| %>
+  <%= movie.title %>
+  <%= movie.description %>
+<% end %>
