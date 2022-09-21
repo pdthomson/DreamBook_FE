@@ -80,12 +80,9 @@
     </div>
   </div> 
   <div class="text-center" id="dream-blog">
-    <h1>Dream of the week</h1>
-    <p>Blog Title</p>
-    <p>Here, we will need to figure out how to display the blog of the week and format it so that it looks nice.</p> 
+    <h1>Recent Dream</h1>
+    <p>><%= User.most_recent_blog.title %></p>
+    <p><%= User.most_recent_blog.body %></p> 
   </div>
 </div>
-
-
-
 
