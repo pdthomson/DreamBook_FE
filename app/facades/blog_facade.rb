@@ -21,5 +21,6 @@ class BlogFacade
     def update_blog(blog_params)
       BlogService.revise_blog(blog_params)
     end
+
   end
 end
