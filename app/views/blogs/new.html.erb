@@ -1,20 +1,140 @@
-<h1>Share Your Dream!</h1>
-<%= link_to 'Home', root_path %> |
-<%= link_to 'Dashboard', dashboard_path, method: :get %> |
-<%= link_to 'Logout' %>
-<%= form_with url: "/blogs", method: :post, local: true do |f| %>
-  <%= f.label :title %>:
-  <%= f.text_field :title %>
-  <br>
-  <%= f.label :body%>:
-  <%= f.text_field :body %>
-  <br>
-  <%= f.label :keyword %>:
-  <%= f.text_field :keyword %>
-  <br>
-  <%= f.hidden_field :user_id, :value => current_user.id %>
-  <br>
-  <%= f.select :status, ['hidden', 'shared']%>
-  <br>
-  <%= f.button 'Submit' %>
-<% end %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.5/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.5/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+body {
+    background-color: black;
+  }
+
+.jumbotron {
+    max-height: 250px;
+    background-color: #3E3458;
+    color: #fff;
+  }
+
+.container {
+    background-color: black;
+    color: #fff;
+  }
+
+.height-row {
+  max-height: 50px;
+}
+ 
+.logo { 
+    max-width: 525px; 
+    max-height: 525px;
+    text: center;
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-bottom: 200px;
+  }
+
+.link {
+    color: #fff;
+    max-height: 50px;
+    font-size: 21px;
+    text-decoration: bold;
+    float: right;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 12px;
+  }
+
+.dream {
+    text-align: center;
+    float: center;
+  }
+
+#dream-blog {
+    margin-top: 175px;
+    margin-left: 145px;
+    color: white;
+  }
+
+.dream-text {
+    max-height: 50px;
+    font-size: 22px;
+    padding-top: 22px;
+    padding-bottom: 5px;
+    margin-bottom; 5px;
+  }
+
+.share {
+    color: #fff;
+    font-size: 22px;
+  }
+
+.field-boxes {
+    background-color: #3E3458;
+    color: #fff;
+  }
+
+.color-button {
+  background-color: #3E3458;
+  color: #fff;
+}
+
+.margin-left {
+  margin-left: 15px;
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="jumbotron">
+    <div class="row height-row">
+      <div class="col align-center dream-text">
+        <p>Dream it, write it, share it</p>
+      </div>
+      <div class="col">
+        <%= image_tag ("DreamBookLogo.png"), :class => "logo" %>
+      </div>
+      <div class="col">
+          <% if current_user %>
+            <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete%>
+            <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get%>
+          <% else %>
+            <%= link_to 'Log in/Register', '/auth/google_oauth2', :class => "link"%>
+          <% end %>
+          <%=link_to 'Home', root_path, :class => "link"%>
+      </div>
+    </div>
+  </div> 
+
+<div class="text-left" id="dream-blog">
+  <h4> Share Your Dream! </h4>
+  <%= form_with url: "/blogs", method: :post, local: true do |f| %>
+    <%= f.label :title%>:
+    <%= f.text_field :body, :class => "field-boxes" %>
+    <br>
+    <%= f.label :body %>:
+    <br>
+    <%= f.text_area :body, :cols => '150', :rows => '20', :class => "field-boxes" %>
+    <br>
+    <%= f.label :keyword %>:
+    <%= f.text_field :keyword, :class => "field-boxes" %>
+    <br>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <br>
+    <div class="dropdown show">
+      <a class="btn color-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Blog Status
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Hidden</a>
+        <a class="dropdown-item" href="#">Shared</a>
+      </div>
+    </div>
+    <br>
+    <input class="btn btn-primary color-button btn-lg border border-dark" type="submit" value="Submit">
+  <% end %>
+  </div>
+</div>
+

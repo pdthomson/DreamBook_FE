@@ -69,19 +69,19 @@
         <%= image_tag ("DreamBookLogo.png"), :class => "logo" %>
       </div>
       <div class="col">
-        <%=link_to 'Home', root_path, :class => "link"%>
           <% if current_user %>
             <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete%>
-            <%= link_to 'Blogs', blogs_path, :class => "link", method: :get%>
             <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get%>
           <% else %>
             <%= link_to 'Log in/Register', '/auth/google_oauth2', :class => "link"%>
           <% end %>
+          <%=link_to 'Home', root_path, :class => "link"%>
       </div>
     </div>
   </div> 
   <div class="text-center" id="dream-blog">
     <h1>Dream of the week</h1>
+    <p>Blog Title</p>
     <p>Here, we will need to figure out how to display the blog of the week and format it so that it looks nice.</p> 
   </div>
 </div>
