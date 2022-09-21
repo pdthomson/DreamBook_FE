@@ -32,7 +32,7 @@ RSpec.describe "Comments Create Page" do
     blog = BlogFacade.user_blog(blog_params[:id])
     first(:button, 'Comment').click
     expect(current_path).to eq("/blogs/#{blog.id}/comments/new")
-    comment = Faker::Book.title
+    comment = "THIS IS THE COMMENT"
     fill_in :comment_text, with: comment
     click_on 'Save'
     expect(current_path).to eq(blog_path(blog.id))
