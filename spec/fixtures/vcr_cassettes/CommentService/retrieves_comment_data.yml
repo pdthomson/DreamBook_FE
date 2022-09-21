@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 46039a75-ecba-4606-b815-6797e497154c
+      - e0d8567b-4f98-44ae-bfee-1525ed07bad4
       X-Runtime:
-      - '0.002732'
+      - '0.002975'
       Transfer-Encoding:
       - chunked
     body:
@@ -42,5 +42,5 @@ http_interactions:
         Dominus Tuus"}},{"id":"42","type":"comment","attributes":{"user_id":180,"blog_id":1,"comment_text":"The
         Last Temptation"}},{"id":"44","type":"comment","attributes":{"user_id":197,"blog_id":1,"comment_text":"Fair
         Stood the Wind for France"}}]}'
-  recorded_at: Tue, 20 Sep 2022 20:41:36 GMT
+  recorded_at: Wed, 21 Sep 2022 00:13:26 GMT
 recorded_with: VCR 6.1.0
