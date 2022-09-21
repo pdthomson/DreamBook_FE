@@ -76,4 +76,55 @@ RSpec.describe 'User Show Page' do
     expect(current_path).to eq(blogs_path)
     expect(page).to_not have_link('private')
   end
+
+  it 'has 2 movie references for a blog', :vcr do 
+    visit root_path
+    click_on 'Log in/Register'
+    visit '/blogs/new'
+    title = Faker::Book.title
+    fill_in :title, with: title
+    fill_in :body, with: Faker::Fantasy::Tolkien.poem
+    fill_in :keyword, with:'shawshank'
+    select "shared", :from => "status"
+    click_on 'Submit'
+    data = [{
+      "adult": false,
+      "backdrop_path": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+      "genre_ids": [
+          18,
+          80
+      ],
+      "id": 278,
+      "original_language": "en",
+      "original_title": "The Shawshank Redemption",
+      "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "popularity": 77.948,
+      "poster_path": "/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "release_date": "1994-09-23",
+      "title": "The Shawshank Redemption",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 22302
+  },
+  {
+      "adult": false,
+      "backdrop_path": "/u6hgtSIzW8nDKKWmun9JDhZz2fp.jpg",
+      "genre_ids": [
+          99
+      ],
+      "id": 546312,
+      "original_language": "en",
+      "original_title": "Shawshank: The Redeeming Feature",
+      "overview": "Film critic and presenter Mark Kermode explores the fascination and praise audiences, fans and critics have behind the classic The Shawshank Redemption (1994) and how its importance grew higher over the years despite being an overlooked film when it was released and not getting any Oscars victories when it was nominated as one of the Best Pictures of the Year.",
+      "popularity": 0.6,
+      "poster_path": "/b7DGM74MRfiLqEveVKwh0jnQ8zX.jpg",
+      "release_date": "2001-09-08",
+      "title": "Shawshank: The Redeeming Feature",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 14
+  }]
+    expect(page).to have_content(data[0][:title])
+    expect(page).to have_content(data[1][:title])
+  end
 end
