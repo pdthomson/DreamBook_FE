@@ -26,6 +26,7 @@ RSpec.describe 'Deletes blog' do
     select "shared", :from => "status"
     click_on 'Submit'
     click_on 'Green Skies'
+    save_and_open_page
     click_on 'Delete Blog'
     
     expect(page).to_not have_content('Green Skies')
