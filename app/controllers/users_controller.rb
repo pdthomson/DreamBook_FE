@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def show
      @user_blogs = BlogFacade.user_blogs(current_user.id)
+<<<<<<< HEAD
      keywords = @user_blogs.map do |blog|
        blog.keyword
      end
@@ -17,6 +18,15 @@ class UsersController < ApplicationController
      @books = keywords.map do |keyword|
       SearchedBookFacade.one_book_matching_searched_keyword(keyword)
      end
+=======
+    #  keywords = @user_blogs.map do |blog|
+    #    blog.keyword
+    #  end
+    #  @movies = answer = []
+    #  keywords.each do |keyword|
+    #    answer << SearchedMovieFacade.two_movies_matching_searched_keyword(keyword)
+    #  end
+>>>>>>> 3c7aca7189dc18817bc9d2612b5419b36be16fcb
      if current_user.nil?
        redirect_to root_path
        flash[:notice] = "You must login or register to visit your dashboard."

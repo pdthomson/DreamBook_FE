@@ -20,3 +20,4 @@ class SearchedMovieFacade
     end
   end
 end
+

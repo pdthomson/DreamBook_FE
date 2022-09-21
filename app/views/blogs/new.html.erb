@@ -123,7 +123,8 @@ body {
     <br>
     <%= f.hidden_field :user_id, :value => current_user.id %>
     <br>
-    <%= f.select :status, ['hidden', 'shared']%>
+
+   <%= f.select :status, ['hidden', 'shared'], { } ,:class => "btn color-button" %>
     <%# <div class="dropdown show">
       <a class="btn color-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Blog Status
@@ -133,9 +134,11 @@ body {
         <a class="dropdown-item" href="#">Shared</a>
       </div>
     </div> %>
+
     <br>
     <input class="btn btn-primary color-button btn-lg border border-dark" type="submit" value="Submit">
   <% end %>
   </div>
 </div>
 
+ <%# <%= f.select :status, ['hidden', 'shared']%> %>
