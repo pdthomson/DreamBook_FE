@@ -104,12 +104,25 @@
   <p>Dreamer: <%= @user.username %></p>
 </div>
 
-
-
 <div class="col-sm-12 text-center" id="blog">
   <h2>My Blogs</h2><br>
   <% @user_blogs.each do |blog| %>
     <p><%= link_to "#{blog.title}", blog_path(blog.id), :class => "blog-link"%></p>
   <% end %>
 </div>
+
+<% @movies.each do |movie| %>
+  <%= movie.title %>
+  <%= movie.description[0..100] %>...
+<% end %>
+
+<% @books.each do |book| %>
+  <% if book.blank? %>
+      <%= book.title = ""  %>
+      <%= book.author = "" %>
+  <% else %>
+      <%= book.title %>
+      <%= book.author %>
+  <% end %>
+<% end %>
 
