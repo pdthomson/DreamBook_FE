@@ -8,7 +8,6 @@ class UsersController < ApplicationController
 
   def show
      @user_blogs = BlogFacade.user_blogs(current_user.id)
-
      keywords = @user_blogs.map do |blog|
        blog.keyword
      end
