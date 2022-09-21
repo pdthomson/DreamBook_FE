@@ -6,8 +6,8 @@ RSpec.describe SearchedBookService do
      expect(parsed_json).to be_a Hash
      expect(parsed_json[:data]).to be_a Array
      first_book = parsed_json[:data][0][:attributes]
-     expect(first_book).to include(:title, :description)
+     expect(first_book).to include(:title, :author)
      expect(first_book[:title]).to be_a String
-     expect(first_book[:description]).to be_a String
+     expect(first_book[:author]).to be_a String
    end
 end
