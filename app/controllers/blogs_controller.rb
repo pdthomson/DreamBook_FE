@@ -14,8 +14,8 @@ class BlogsController < ApplicationController
   end
 
   def create
-    wip = blog_params[:keyword].include?(' ')
-    if wip
+    created_blog = blog_params[:keyword].include?(' ')
+    if created_blog
       flash[:notice] = 'Keyword must be one word!'
       redirect_to new_blog_path
     else
