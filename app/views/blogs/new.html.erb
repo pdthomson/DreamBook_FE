@@ -112,7 +112,7 @@ body {
   <h4> Share Your Dream! </h4>
   <%= form_with url: "/blogs", method: :post, local: true do |f| %>
     <%= f.label :title%>:
-    <%= f.text_field :body, :class => "field-boxes" %>
+    <%= f.text_field :title, :class => "field-boxes" %>
     <br>
     <%= f.label :body %>:
     <br>

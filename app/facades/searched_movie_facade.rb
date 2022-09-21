@@ -5,8 +5,8 @@ class SearchedMovieFacade
       array_of_all_movie_results = parsed_json[:data].map do |searched_movie_data|
         SearchedMovie.new(searched_movie_data)
       end
-      first_two_movies = array_of_all_movie_results.sort_by {|movie| movie.title}[0]
-      return first_two_movies
+      # first_two_movies = array_of_all_movie_results.sort_by {|movie| movie.title}[0]
+      # return first_two_movies
     end
   end
 end
