@@ -8,7 +8,7 @@ RSpec.describe SearchedMovieFacade do
     expect(result).to be_a SearchedMovie
   end
 
-  it 'sad path: if keyword does not exist in movie api, send user Sharknado movie recommendation', :vcr do
+  it 'sad path: if keyword does not exist in movie api, send user Clash of the Empires movie recommendation', :vcr do
 
     result = SearchedMovieFacade.two_movies_matching_searched_keyword('dsfgsdhreujdtryjetsryujwartyhaeqrtyg')
 
