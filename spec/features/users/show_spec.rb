@@ -71,18 +71,18 @@ RSpec.describe 'User Show Page' do
     expect(page).to have_link('TestWITHPARKERANDTYLER')
   end
 
-  xit 'can create a private blog', :vcr do
+  it 'can create a private blog', :vcr do
     visit root_path
     click_on 'Log in/Register'
-    expect(page).to have_button('Record a Dream')
+    expect(page).to have_link('Record a Dream')
     click_on 'Record a Dream'
     expect(current_path).to eq(new_blog_path)
     fill_in :title, with: 'private'
     fill_in :body, with: 'you cant see'
+    fill_in :keyword, with: '1947'
     select 'hidden', :from => 'status'
     click_on 'Submit'
-    click_link 'Home'
-    click_link 'Blogs'
+    click_link 'Dreams'
     expect(current_path).to eq(blogs_path)
     expect(page).to_not have_link('private')
   end
