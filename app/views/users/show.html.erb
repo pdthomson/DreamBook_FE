@@ -85,6 +85,7 @@
           <%= link_to 'Dreams', blogs_path, :class => "link-dream" %>
         <% end %>
       </div>
+
       <div class="col">
         <%= image_tag ("DreamBookLogo.png"), :class => "logo" %>
       </div>
@@ -104,25 +105,32 @@
   <p>Dreamer: <%= @user.username %></p>
 </div>
 
-<div class="col-sm-12 text-center" id="blog">
-  <h2>My Blogs</h2><br>
-  <% @user_blogs.each do |blog| %>
-    <p><%= link_to "#{blog.title}", blog_path(blog.id), :class => "blog-link"%></p>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 text-left" id="blog">
+      <h2>My Blogs</h2><br>
+      <% @user_blogs.each do |blog| %>
+        <p><%= link_to "#{blog.title}", blog_path(blog.id), :class => "blog-link"%></p>
+      <% end %>
+    </div>
+
+    <div class="col-sm-8 text-left text-white" id="blog">
+    <h2>Movie Recommendations</h2><br>
+      <% @movies.each do |movie| %>
+        <p>Movie Title: <%= movie.title %></p>
+        <p>Movie Description: <%= movie.description[0..100] %>...</p>
+      <% end %><br><br>
+
+    <h2>Book Recommendations</h2><br>
+      <% @books.each do |book| %>
+        <% if book.blank? %>
+            <p>Book Title: <%= book.title = ""  %></p>
+            <p>Book Author: <%= book.author = "" %></p>
+        <% else %>
+            <p>Book Title: <%= book.title %></p>
+            <p>Book Author: <%= book.author %></p>
+        <% end %>
+      <% end %>
+  </div>
 </div>
-
-<% @movies.each do |movie| %>
-  <%= movie.title %>
-  <%= movie.description[0..100] %>...
-<% end %>
-
-<% @books.each do |book| %>
-  <% if book.blank? %>
-      <%= book.title = ""  %>
-      <%= book.author = "" %>
-  <% else %>
-      <%= book.title %>
-      <%= book.author %>
-  <% end %>
-<% end %>
 

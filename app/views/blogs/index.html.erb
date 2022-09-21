@@ -25,6 +25,9 @@
   .logo {
     max-width: 525px;
     max-height: 525px;
+    text: left;
+    padding-top: 0px;
+    padding-left: 0px;
     padding-bottom: 200px;
   }
 
@@ -65,23 +68,10 @@
 
         <%= link_to 'Home', root_path, :class => "link" %>
         <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get %> 
-        <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete %>
+        <%= link_to 'Logout', session_path(current_user.id), :class => "link", method: :delete %>
     </div>
-
-<div class="bg-secondary text-white">
-  <div class="container text-right">
-    <%= link_to 'Home', root_path %> |
-    <%= link_to 'Dashboard', dashboard_path, method: :get %> |
-    <%= link_to 'Logout', session_path(current_user.id), method: :delete %>
-  </div>
-  <div class="container text-center">
-    <h2>Blogs</h2>
-    <p class="text-primary"></p>
-
   </div>
 </div>
-
-
 
 <div class="col-sm-12 text-center" id="dashboard">
   <h1>Dreamer Blogs</h1>
