@@ -38,7 +38,7 @@ body {
 .link {
     color: #fff;
     max-height: 50px;
-    font-size: 21px;
+    font-size: 20px;
     text-decoration: bold;
     float: right;
     text-align: center;
@@ -99,6 +99,8 @@ body {
       <div class="col">
           <% if current_user %>
             <%= link_to 'Log out', session_path(current_user.id), :class => "link", method: :delete%>
+            <%= link_to 'Dreams', blogs_path, :class => "link" %>
+            <%= link_to 'Record a Dream', new_blog_path, :class => "link" %>
             <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get%>
           <% else %>
             <%= link_to 'Log in/Register', '/auth/google_oauth2', :class => "link"%>
