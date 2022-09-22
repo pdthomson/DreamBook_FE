@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Rails-5.2.8-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Ruby-2.7.4-orange)
 
-![DreamBookLogo](https://user-images.githubusercontent.com/103782984/191810726-a781e16e-4ecc-4ef8-8b31-efe59fa82280.jpg)
+![DreamBookLogo](https://user-images.githubusercontent.com/103782984/191810726-a781e16e-4ecc-4ef8-8b31-efe59fa82280.jpg =250x250)
 
 
 # Dreambook: Front-End
