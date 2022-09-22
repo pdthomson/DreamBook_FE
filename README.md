@@ -75,5 +75,5 @@ Start up the Back-End as instructed.
   - **Shirley DeCesari** - *Turing Student* - [GitHub Profile](https://github.com/sdecesari) - [LinkedIn](https://www.linkedin.com/in/shirley-decesari-760950157/)
   - **Nikky Rojas** - *Turing Student* - [GitHub Profile](https://github.com/nikkyrojas) - [LinkedIn](https://www.linkedin.com/in/nikkyrojas/)
   - **Gwendolyn Ruiz** - *Turing Student* - [GitHub Profile](https://github.com/gwen-marina) - [LinkedIn](https://www.linkedin.com/in/gwendolyn-ruiz-329064238/)
-  - **Bryce Simonds** - *Turing Student* - [GitHub Profile](https://github.com/brycesimonds) - [Turing Alum Profile](https://terminal.turing.edu/alumni/1499-bryce-simonds) - [LinkedIn](https://www.linkedin.com/in/bryce-simonds/)
+  - **Bryce Simonds** - *Turing Student* - [GitHub Profile](https://github.com/brycesimonds) - [LinkedIn](https://www.linkedin.com/in/bryce-simonds/) - [Turing Alum Profile](https://terminal.turing.edu/alumni/1499-bryce-simonds)
   - **Parker Thompson** - *Turing Student* - [GitHub Profile](https://github.com/pdthomson) - [LinkedIn](https://www.linkedin.com/in/parker-thomson-a15a68146/)
