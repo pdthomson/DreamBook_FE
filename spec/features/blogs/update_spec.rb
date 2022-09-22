@@ -33,7 +33,7 @@ RSpec.describe 'update blog' do
     fill_in :body, with: "A relaxing dream about the sky"
     fill_in :keyword, with: 'sky'
     select "shared", :from => "status"
-    click_on 'Update'
+    click_on 'Submit'
     expect(page).to have_content('Blue Skies')
   end
 
