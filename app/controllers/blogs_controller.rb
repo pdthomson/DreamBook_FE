@@ -40,7 +40,6 @@ class BlogsController < ApplicationController
   end
 
   def destroy
-    binding.pry
     BlogService.delete_blog(blog_params)
     flash[:success] = 'Blog Deleted!'
     redirect_to dashboard_path
