@@ -110,8 +110,10 @@
       </div>
       <%= @blog.body %>
       <br><br>
-      <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "update-delete-blog", method: :get %>
-      <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "update-delete-blog", method: :delete %>  
+      <% if current_user.id == @blog.user_id %>
+        <%= link_to 'Update Blog', edit_blog_path(@blog.id), :class => "update-delete-blog", method: :get %>
+        <%= link_to 'Delete Blog', blog_path(@blog.id), :class => "update-delete-blog", method: :delete %>  
+      <% end %>
       <br><br>
       <h5>Comments:</h5>
       <% @comments[:data].each_with_index do |comment, index| %>
