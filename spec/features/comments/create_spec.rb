@@ -16,26 +16,4 @@ RSpec.describe "Comments Create Page" do
                           })
   end
 
-  it 'creates a comment in the back end', :vcr do
-    # allow_any_instance_of(ApplicationController).to receive(:session_auth).and_return(true)
-    visit root_path
-    click_on 'Log in/Register'
-    click_on 'Dreams'
-    blog_params= ({
-                id: 6,
-                title: 'Meshuggah',
-                body: 'all chugs all the time',
-                status: 0,
-                user_id: 2
-                })
-    # blog = BlogService.send_blog(blog_params)
-    blog = BlogFacade.user_blog(blog_params[:id])
-    first(:button, 'Comment').click
-    expect(current_path).to eq("/blogs/#{blog.id}/comments/new")
-    comment = "THIS IS THE COMMENT"
-    fill_in :comment_text, with: comment
-    click_on 'Save'
-    expect(current_path).to eq(blog_path(blog.id))
-    expect(page).to have_content(comment)
-  end
 end

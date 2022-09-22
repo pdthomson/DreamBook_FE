@@ -1,7 +1,7 @@
 class SearchedBookFacade
   class << self
     def one_book_matching_searched_keyword(keyword)
-      if SearchedBookService.get_all_keyword_matching_books(keyword)[:data].blank?
+      if SearchedBookService.get_all_keyword_matching_books(keyword)[:data].empty?
         keyword = '1947'
         parsed_json = SearchedBookService.get_all_keyword_matching_books(keyword)
         array_of_all_book_results = parsed_json[:data].map do |searched_book_data|

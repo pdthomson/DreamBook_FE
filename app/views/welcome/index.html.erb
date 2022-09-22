@@ -81,8 +81,11 @@
   </div> 
   <div class="text-center" id="dream-blog">
     <h1>Dream of the Week</h1>
-    <%# <h3><%= User.most_recent_blog.title %></h3> %>
-    <%# <p><%= User.most_recent_blog.body %></p>  %>
+    <% if User.most_recent_blog.nil? %>
+    <% else %>
+      <h3> <%= User.most_recent_blog.title %></h3> 
+      <p><%= User.most_recent_blog.body %></p> 
+     <% end %>
   </div>
 </div>
 

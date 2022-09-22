@@ -24,7 +24,7 @@ RSpec.describe 'User Show Page' do
     expect(page).to have_link('Log out')
   end
 
-  xit 'can delete the user', :vcr do #NEED TO DESTROY USERS BLOGS AS WELL
+  it 'can delete the user', :vcr do #NEED TO DESTROY USERS BLOGS AS WELL
     visit root_path
     click_on 'Log in/Register'
     expect(current_path).to eq(dashboard_path)

@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe CommentService do
   it 'retrieves comment data', :vcr do
     blog_id = 1
+
       parsed_json = CommentService.get_all_comments(blog_id)
       expect(parsed_json).to be_a Hash
       expect(parsed_json[:data]).to be_a Array
