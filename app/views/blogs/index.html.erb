@@ -25,9 +25,8 @@
   .logo {
     max-width: 525px;
     max-height: 525px;
-    text: left;
     padding-top: 0px;
-    padding-left: 0px;
+    padding-left: 18px;
     padding-bottom: 200px;
   }
 
@@ -39,6 +38,10 @@
     text-align: right;
     padding-top: 20px;
     margin-right: 12px;
+  }
+
+  .blog-link {
+    color: #fff;
   }
 
   .dream-text {
@@ -61,11 +64,9 @@
       <div class="col align-center dream-text">
         <p>Dream it, write it, share it</p>
       </div>
-
       <div class="col">
         <%= image_tag ("DreamBookLogo.png"), :class => "logo" %>
       </div>
-
         <%= link_to 'Home', root_path, :class => "link" %>
         <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get %> 
         <%= link_to 'Record a Dream', new_blog_path, :class => "link" %>
@@ -81,7 +82,7 @@
 <div class="col-sm-12 text-center">
   <% @blogs.each do |blog| %>
     <% if blog.status == 'shared' %>
-      <%= link_to blog.title, blog_path(blog.id) %>
+     <p> <%= link_to blog.title, blog_path(blog.id), :class => "blog-link" %> </p>
     <% end %>
   <% end %>
 </div>

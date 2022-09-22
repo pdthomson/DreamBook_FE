@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +107,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4 text-left" id="blog">
-      <h2>My Blogs</h2><br>
+      <h2>My Dreams</h2><br>
       <% @user_blogs.each do |blog| %>
         <p><%= link_to "#{blog.title}", blog_path(blog.id), :class => "blog-link"%></p>
       <% end %>
