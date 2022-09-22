@@ -68,6 +68,7 @@
 
         <%= link_to 'Home', root_path, :class => "link" %>
         <%= link_to 'Dashboard', dashboard_path, :class => "link", method: :get %> 
+        <%= link_to 'Record a Dream', new_blog_path, :class => "link" %>
         <%= link_to 'Logout', session_path(current_user.id), :class => "link", method: :delete %>
     </div>
   </div>
