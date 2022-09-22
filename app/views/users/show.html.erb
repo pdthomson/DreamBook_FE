@@ -123,13 +123,8 @@
 
     <h2>Book Recommendations</h2><br>
       <% @books.each do |book| %>
-        <% if book.blank? %>
-            <p>Book Title: <%= book.title = ""  %></p>
-            <p>Book Author: <%= book.author = "" %></p>
-        <% else %>
             <p>Book Title: <%= book.title %></p>
             <p>Book Author: <%= book.author %></p>
-        <% end %>
       <% end %>
   </div>
 </div>
