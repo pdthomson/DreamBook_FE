@@ -10,7 +10,7 @@ RSpec.describe SearchedBookFacade do
 
   it 'sad path: if keyword does not exist in book api, send user 1947 book recommendation', :vcr do
 
-    result = SearchedBookFacade.one_book_matching_searched_keyword('dsfgsdhreujdtryjetsryujwartyhaeqrtyg')
+    result = SearchedBookFacade.one_book_matching_searched_keyword('asjczsds')
 
     expect(result.title).to eq("1947")
   end

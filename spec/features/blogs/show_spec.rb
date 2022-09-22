@@ -36,13 +36,35 @@ RSpec.describe 'Blogs Show' do
   it 'it has a title, body, and comments section', :vcr do
     visit root_path
     click_on 'Log in'
-    visit "/blogs/2"
-    expect(page).to have_content('Flying')
-    expect(page).to have_content("where cats were flying")
+    click_on 'Record a Dream'
+    fill_in :title, with: "Green Skies"
+    fill_in :body, with: "The sky was a vibrant green"
+    fill_in :keyword, with: 'sky'
+    select "shared", :from => "status"
+    click_on 'Submit'
+    click_on 'Green Skies'
+
+    expect(page).to have_content('Green Skies')
+    expect(page).to have_content("The sky was a vibrant green")
     expect(page).to have_content("Comments:")
-    # within "#comments" do
-    #   expect(page).to have_content("sounds so pretty!")
-    # end
+   
+  end
+   it 'creates a comment in the back end', :vcr do
+    # allow_any_instance_of(ApplicationController).to receive(:session_auth).and_return(true)
+    visit root_path
+    click_on 'Log in/Register'
+    click_on 'Record a Dream'
+    fill_in :title, with: "Green Skies"
+    fill_in :body, with: Faker::Fantasy::Tolkien.poem
+    fill_in :keyword, with: 'sky'
+    select "shared", :from => "status"
+    click_on 'Submit'
+    click_on 'Green Skies'
+
+    comment = "THIS IS THE COMMENT"
+    fill_in :comment_text, with: comment
+    click_on 'Save'
+    expect(page).to have_content(comment)
   end
 end
 
