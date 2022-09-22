@@ -26,6 +26,7 @@ The two repositories that make up this project can be found here: [Front-End rep
 
 ### Design
   * By splitting our project into two repositories, we have successfully implemented Service Oriented Architecture for future scalability. This Front-End repository is responsible for the user-facing views along with all services and controllers necessary to query our backend's API.  
+  * Our team decided to use Google OAuth to log in a user. With Google OAuth, the user never has to provide sensitive credentials to our application.
   * One database is utilized on our front-end. This is for saving user information from Google OAuth to log in a user.
 
 ### Setup
