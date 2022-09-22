@@ -43,7 +43,8 @@ class BlogService
     end
 
     def delete_blog(blog_params)
-      response = conn.delete("/api/v1/blogs/#{blog_params[:id]}")
+      blog_id = blog_params[:id].to_i
+      response = conn.delete("/api/v1/blogs/#{blog_id}")
     end
 
   end
