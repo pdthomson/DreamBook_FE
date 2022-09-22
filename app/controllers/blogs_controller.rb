@@ -32,7 +32,7 @@ class BlogsController < ApplicationController
     blog = BlogFacade.update_blog(blog_params)
     if blog.update(blog_params)
       redirect_to blog_path(blog_params[:id])
-      flash[:alert] = "Blog has been updated!"
+      flash[:alert] = "Dream has been updated!"
     else
       redirect_to edit_blog_path(blog_params[:id])
       flash[:alert] = "Error: Missing data"
@@ -41,7 +41,7 @@ class BlogsController < ApplicationController
 
   def destroy
     BlogService.delete_blog(blog_params)
-    flash[:success] = 'Blog Deleted!'
+    flash[:success] = 'Dream Deleted!'
     redirect_to dashboard_path
   end
 
