@@ -81,6 +81,9 @@ Start up the Back-End as instructed.
 #### Record a Dream
 <img src="https://user-images.githubusercontent.com/103782984/191998498-e20e64fe-333a-4a34-96e2-4ab0356093a8.png" width=80% height=80%>
 
+#### User Dashboard
+<img src="https://user-images.githubusercontent.com/103782984/191998788-470f1d99-f6d4-41ee-89c3-fc16a2422f45.png" width=80% height=80%>
+
 ### Authors
   - **Tyler Caudill** - *Turing Student* - [GitHub Profile](https://github.com/TeeCaud) - [LinkedIn](https://www.linkedin.com/in/tyler-caudill-75885b240/)
   - **Shirley DeCesari** - *Turing Student* - [GitHub Profile](https://github.com/sdecesari) - [LinkedIn](https://www.linkedin.com/in/shirley-decesari-760950157/)
