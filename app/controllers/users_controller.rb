@@ -17,7 +17,7 @@ class UsersController < ApplicationController
      @books = keywords.map do |keyword|
       SearchedBookFacade.one_book_matching_searched_keyword(keyword)
      end
-
+     @books.compact
      if current_user.nil?
        redirect_to root_path
        flash[:notice] = "You must login or register to visit your dashboard."
