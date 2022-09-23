@@ -16,9 +16,9 @@ The two repositories that make up this project can be found here: [Front-End rep
 
 #### [Visit the Deployed Application Here](https://dreambook-frontend.herokuapp.com/)
 
-### Homepage
+## Homepage
 <br>
-<img src="https://user-images.githubusercontent.com/103782984/191996972-1ed17138-6a77-4564-bfbd-69d8af2180bb.png" width=80% height=80%>
+<img src="https://user-images.githubusercontent.com/103782984/191997509-49795c41-e443-4da9-b5ef-f0862805873f.png" width=80% height=80%>
 
 
 ## Table of Contents
