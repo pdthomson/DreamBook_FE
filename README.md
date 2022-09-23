@@ -16,17 +16,15 @@ The two repositories that make up this project can be found here: [Front-End rep
 
 #### [Visit the Deployed Application Here](https://dreambook-frontend.herokuapp.com/)
 
-## Homepage
-<br>
-<img src="https://user-images.githubusercontent.com/103782984/191997509-49795c41-e443-4da9-b5ef-f0862805873f.png" width=80% height=80%>
-
 
 ## Table of Contents
   - [Design](#design)
   - [Setup](#setup)
   - [Running the Tests](#running-the-tests)
   - [Deployment](#deployment)
+  - [Screenshots](#screenshots)
   - [Authors](#authors)
+
 
 ### Design
   * By splitting our project into two repositories, we have successfully implemented Service Oriented Architecture for future scalability. This Front-End repository is responsible for the user-facing views along with all services and controllers necessary to query our backend's API.  
@@ -74,6 +72,10 @@ To run our RSpec testing suite, run 'bundle exec rspec' from the command line.
 To run this project locally, enter `rails server` from the command line and visit `http://localhost:3000` to navigate to the homepage.  It is encouraged to visit this URL in an Incognito window of your browser to prevent needing to periodically delete cookies.
 
 Start up the Back-End as instructed.
+
+### Screenshots
+<br>
+<img src="https://user-images.githubusercontent.com/103782984/191997509-49795c41-e443-4da9-b5ef-f0862805873f.png" width=80% height=80%>
 
 ### Authors
   - **Tyler Caudill** - *Turing Student* - [GitHub Profile](https://github.com/TeeCaud) - [LinkedIn](https://www.linkedin.com/in/tyler-caudill-75885b240/)
