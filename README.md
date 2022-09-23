@@ -74,8 +74,12 @@ To run this project locally, enter `rails server` from the command line and visi
 Start up the Back-End as instructed.
 
 ### Screenshots
-<br>
+
+####Homepage
 <img src="https://user-images.githubusercontent.com/103782984/191997509-49795c41-e443-4da9-b5ef-f0862805873f.png" width=80% height=80%>
+
+###Record a Dream
+<img src="https://user-images.githubusercontent.com/103782984/191998498-e20e64fe-333a-4a34-96e2-4ab0356093a8.png" width=80% height=80%>
 
 ### Authors
   - **Tyler Caudill** - *Turing Student* - [GitHub Profile](https://github.com/TeeCaud) - [LinkedIn](https://www.linkedin.com/in/tyler-caudill-75885b240/)
