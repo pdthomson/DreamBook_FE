@@ -14,7 +14,10 @@ Have you wanted a space to jot down your dreams the second you wake up? Like the
 
 The two repositories that make up this project can be found here: [Front-End repo](https://github.com/pdthomson/DreamBook_FE) & [Back-End repo](https://github.com/pdthomson/DreamBook_BE)
 
-#### [Visit the Deployed Application Here](https://still-hamlet-71640.herokuapp.com/)
+#### [Visit the Deployed Application Here](https://dreambook-frontend.herokuapp.com/)
+
+###Homepage
+<img src="https://user-images.githubusercontent.com/103782984/191996972-1ed17138-6a77-4564-bfbd-69d8af2180bb.png" width=30% height=30%>
 
 
 ## Table of Contents
